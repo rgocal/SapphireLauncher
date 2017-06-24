@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.NxIndustries.Sapphire.AppsCustomizeTabHost
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:launcher="http://schemas.android.com/apk/res-auto"
+    android:clipChildren="false"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipChildren="false"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:clipChildren="false">
+            <FrameLayout
+                android:id="@+id/fake_page_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipChildren="false"
+                android:clipToPadding="false">
+                <FrameLayout
+                    android:id="@+id/fake_page"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="invisible"
+                    android:clipToPadding="false" />
+            </FrameLayout>
+            <com.NxIndustries.Sapphire.AppsCustomizePagedView
+                android:id="@+id/apps_customize_pane_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                launcher:widgetCountX="@integer/apps_customize_widget_cell_count_x"
+                launcher:widgetCountY="@integer/apps_customize_widget_cell_count_y"
+                launcher:maxGap="@dimen/workspace_max_gap"
+                launcher:pageIndicator="@+id/apps_customize_page_indicator" />
+        </FrameLayout>
+        <include
+            android:id="@+id/apps_customize_page_indicator"
+            layout="@layout/page_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+    </LinearLayout>
+</com.NxIndustries.Sapphire.AppsCustomizeTabHost>

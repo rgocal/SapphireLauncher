@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:autofit="http://schemas.android.com/apk/res-auto"
+    android:splitMotionEvents="false"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <View
+        android:id="@+id/fading_background_back"
+        android:alpha="0"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignTop="@+id/drawer_item_flow"
+        android:layout_alignBottom="@+id/drawer_item_flow"
+        android:background="@color/app_drawer_drag_background" />
+
+    <LinearLayout
+        android:id="@+id/drawer_item_flow"
+        android:layout_alignParentEnd="true"
+        android:paddingTop="10dp"
+        android:layout_toRightOf="@+id/drawer_item_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" />
+
+    <View
+        android:id="@+id/fading_background_front"
+        android:alpha="0"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignTop="@id/drawer_item_flow"
+        android:layout_alignBottom="@id/drawer_item_flow"
+        android:background="@color/app_drawer_drag_background" />
+
+    <com.NxIndustries.Sapphire.AutoFitTextView
+        android:id="@+id/drawer_item_title"
+        android:layout_width="@dimen/drawer_item_title_width"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="6dp"
+        android:layout_centerVertical="true"
+        android:includeFontPadding="false"
+        android:gravity="center"
+        android:maxLines="1"
+        autofit:minTextSize="8sp"
+        android:textSize="24sp"
+        android:layout_gravity="center"
+        android:fontFamily="sans-serif-light"
+        android:textColor="@android:color/white"
+        android:shadowRadius="4.0"
+        android:shadowDy="2"
+        android:shadowColor="#b0000000"/>
+
+</RelativeLayout>

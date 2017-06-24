@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fillViewport="false"
+    android:scrollbarSize="1dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dashboard_category_margin_bottom"
+        android:elevation="@dimen/dashboard_category_elevation"
+        android:orientation="vertical"
+        android:paddingEnd="@dimen/dashboard_category_padding"
+        android:paddingLeft="@dimen/dashboard_category_padding"
+        android:paddingRight="@dimen/dashboard_category_padding"
+        android:paddingStart="@dimen/dashboard_category_padding">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.NxIndustries.Sapphire.widget.TextView
+                android:layout_width="wrap_content"
+                android:textAlignment="viewStart"
+                android:text="Navigation"
+                android:textStyle="normal|bold"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:textColor="@color/blue" />
+
+            <ImageView
+                android:id="@+id/cust_icon"
+                android:src="@drawable/ic_undobar_undo"
+                android:layout_width="@dimen/dashboard_tile_image_size"
+                android:layout_height="@dimen/dashboard_tile_image_size"
+                android:scaleType="centerInside"
+                android:tint="@color/blue"
+                android:transitionName="customization"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="16dp" />
+
+        </RelativeLayout>
+
+        <!-- Category Start-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:clickable="true"
+            android:background="?attr/selectableItemBackground"
+            android:minHeight="@dimen/dashboard_tile_minimum_height"
+            android:id="@+id/nav_buttons">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:paddingStart="16dp">
+                    <com.NxIndustries.Sapphire.widget.TextView
+                        android:text="@string/navbar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="marquee"
+                        android:fadingEdge="horizontal"
+                        android:singleLine="true"
+                        android:textAppearance="?android:textAppearanceMedium" />
+                    <com.NxIndustries.Sapphire.widget.TextView
+                        android:text="Customize the navbar button actions"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:textAppearanceSmall"
+                        android:textColor="?android:attr/textColorSecondary" />
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="?android:attr/dividerHorizontal" />
+            </LinearLayout>
+        </LinearLayout>
+        <!-- Category End-->
+
+        <!-- Category Start-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:clickable="true"
+            android:background="?attr/selectableItemBackground"
+            android:minHeight="@dimen/dashboard_tile_minimum_height"
+            android:id="@+id/gesture_list">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:paddingStart="16dp">
+                    <com.NxIndustries.Sapphire.widget.TextView
+                        android:text="@string/simple_gest"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="marquee"
+                        android:fadingEdge="horizontal"
+                        android:singleLine="true"
+                        android:textAppearance="?android:textAppearanceMedium" />
+                    <com.NxIndustries.Sapphire.widget.TextView
+                        android:text="Add swipe motion gesture actions"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:textAppearanceSmall"
+                        android:textColor="?android:attr/textColorSecondary" />
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="?android:attr/dividerHorizontal" />
+            </LinearLayout>
+        </LinearLayout>
+        <!-- Category End-->
+
+        <!-- Category Start-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:clickable="true"
+            android:background="?attr/selectableItemBackground"
+            android:minHeight="@dimen/dashboard_tile_minimum_height"
+            android:id="@+id/draw_sketch">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:paddingStart="16dp">
+                    <com.NxIndustries.Sapphire.widget.TextView
+                        android:text="@string/create_sketch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="marquee"
+                        android:fadingEdge="horizontal"
+                        android:singleLine="true"
+                        android:textAppearance="?android:textAppearanceMedium" />
+                    <com.NxIndustries.Sapphire.widget.TextView
+                        android:text="Create a custom gesture for a desired action"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:textAppearanceSmall"
+                        android:textColor="?android:attr/textColorSecondary" />
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="?android:attr/dividerHorizontal" />
+            </LinearLayout>
+        </LinearLayout>
+        <!-- Category End-->
+
+        <!-- Category Start-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:clickable="true"
+            android:background="?attr/selectableItemBackground"
+            android:minHeight="@dimen/dashboard_tile_minimum_height"
+            android:id="@+id/my_sketches">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:paddingStart="16dp">
+                    <com.NxIndustries.Sapphire.widget.TextView
+                        android:text="@string/current_sketches"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="marquee"
+                        android:fadingEdge="horizontal"
+                        android:singleLine="true"
+                        android:textAppearance="?android:textAppearanceMedium" />
+                    <com.NxIndustries.Sapphire.widget.TextView
+                        android:text="Current user created sketches available"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:textAppearanceSmall"
+                        android:textColor="?android:attr/textColorSecondary" />
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="?android:attr/dividerHorizontal" />
+            </LinearLayout>
+        </LinearLayout>
+        <!-- Category End-->
+
+        <!-- Category Start-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:clickable="true"
+            android:background="?attr/selectableItemBackground"
+            android:minHeight="@dimen/dashboard_tile_minimum_height"
+            android:id="@+id/sketch_settings">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:paddingStart="16dp">
+                    <com.NxIndustries.Sapphire.widget.TextView
+                        android:text="@string/sketch_setting"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="marquee"
+                        android:fadingEdge="horizontal"
+                        android:singleLine="true"
+                        android:textAppearance="?android:textAppearanceMedium" />
+                    <com.NxIndustries.Sapphire.widget.TextView
+                        android:text="User settings and preferences for sketch gestures and detection"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:textAppearanceSmall"
+                        android:textColor="?android:attr/textColorSecondary" />
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="?android:attr/dividerHorizontal" />
+            </LinearLayout>
+        </LinearLayout>
+        <!-- Category End-->
+
+    </LinearLayout>
+</ScrollView>

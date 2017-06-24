@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <!-- Gestures -->
+    <string-array name="gesture_target_names" translatable="false">
+        <item>@string/gesture_target_nothing</item>
+        <item>@string/gesture_target_homescreen</item>
+        <item>@string/gesture_target_drawer</item>
+        <item>@string/gesture_target_previews</item>
+        <item>@string/gesture_target_settings</item>
+        <item>@string/gesture_target_gesture</item>
+        <item>@string/gesture_target_sdrawer</item>
+        <item>@string/gesture_target_custom</item>
+    </string-array>
+
+    <string-array name="gesture_target_values" translatable="false" >
+        <item>nothing</item>
+        <item>default_homescreen</item>
+        <item>open_app_drawer</item>
+        <item>show_previews</item>
+        <item>show_settings</item>
+        <item>gesture_listen</item>
+        <item>new_drawer</item>
+        <item>custom</item>
+    </string-array>
+
+    <!-- Smart folders -->
+    <string-array name="smart_folder_entries" translatable="false">
+        <item>@string/off_string</item>
+        <item>@string/smart_folder_summary_one</item>
+        <item>@string/smart_folder_summart_two</item>
+    </string-array>
+
+    <string-array name="smart_folder_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <!-- Drawer Sort Mode -->
+    <string-array name="sort_mode_entries" transltable="false">
+        <item>@string/sort_mode_title</item>
+        <item>@string/sort_mode_launch_count</item>
+        <item>@string/sort_mode_install_time</item>
+    </string-array>
+
+    <string-array name="sort_mode_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <!-- Launcher actions -->
+    <string-array name="shortcut_action_launcher_entries" translatable="false">
+        <item>@string/shortcut_action_launcher_apps</item>
+        <item>@string/shortcut_action_launcher_overview</item>
+        <item>@string/shortcut_action_launcher_settings</item>
+        <item>@string/shortcut_action_launcher_homescreen</item>
+        <item>@string/shortcut_action_gesture</item>
+        <item>@string/shortcut_action_sdrawer</item>
+    </string-array>
+
+    <string-array name="shortcut_action_launcher_values" translatable="false">
+        <item>**open_app_drawer**</item>
+        <item>**overview_mode**</item>
+        <item>**launcher_settings**</item>
+        <item>**default_homescreen**</item>
+        <item>**launcher_gesture**</item>
+        <item>**open_sdrawer**</item>
+    </string-array>
+
+    <string-array name="drawer_style_entries" translatable="false">
+        <item>@string/drawer_style_paged</item>
+        <item>@string/drawer_style_vertical</item>
+        <item>@string/drawer_style_vertical_folder</item>
+    </string-array>
+
+    <string-array name="drawer_style_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <string-array name="pref_notification_priority_entries">
+        <item>High</item>
+        <item>Low (no icon)</item>
+    </string-array>
+
+    <string-array name="pref_notification_priority_values" translatable="false">
+        <item>max</item>
+        <item>min</item>
+    </string-array>
+
+    <array name="batterymeter_color_levels" translatable="false">
+        <item>4</item>
+        <item>15</item>
+        <item>100</item>
+    </array>
+    <array name="batterymeter_color_values" translatable="false">
+        <item>@color/red</item>
+        <item>@color/white</item>
+        <item>@color/blue</item>
+    </array>
+    <array name="batterymeter_bolt_points" translatable="false">
+        <item>73</item> <item>0</item>
+        <item>392</item><item>0</item>
+        <item>201</item><item>259</item>
+        <item>442</item><item>259</item>
+        <item>4</item>  <item>703</item>
+        <item>157</item><item>334</item>
+        <item>0</item>  <item>334</item>
+    </array>
+
+
+</resources>

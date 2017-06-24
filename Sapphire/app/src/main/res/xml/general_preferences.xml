@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <Preference
+        android:layout="@layout/general_header" />
+    <com.NxIndustries.Sapphire.preference.MaterialPreference
+            android:title="@string/scheme"/>
+    <CheckBoxPreference
+        android:key="dark_statusbar"
+        android:title="@string/dark_status"
+        android:summary="@string/dark_info"
+        android:defaultValue="false" />
+    <CheckBoxPreference
+                android:key="key_systemui"
+        android:title="@string/unlock_title"
+                android:summary="@string/unlock_info"
+                android:defaultValue="false" />
+            <net.margaritov.preference.colorpicker.ColorPickerPreference
+                android:dependency="key_systemui"
+                android:key="statusbar_background"
+                android:title="@string/statusbar"
+                android:summary="@string/home_apply"
+                android:defaultValue="@color/transparent" />
+            <net.margaritov.preference.colorpicker.ColorPickerPreference
+                android:dependency="key_systemui"
+                android:key="navbar_background"
+                android:title="@string/nav"
+                android:summary="@string/home_apply"
+                android:defaultValue="@color/transparent"/>
+    <com.NxIndustries.Sapphire.preference.CardCategory />
+
+        <com.NxIndustries.Sapphire.preference.MaterialPreference
+            android:title="@string/basic"/>
+    <CheckBoxPreference
+        android:key="enable_voice"
+        android:title="@string/goo_hot"
+        android:summary="@string/goo_info"
+        android:defaultValue="true"
+        android:enabled="false"/>
+        <Preference
+            android:key="key_apps"
+            android:title="@string/goo_set"
+            android:summary="@string/goo_set_info"/>
+        <com.NxIndustries.Sapphire.preference.CardCategory />
+
+        <com.NxIndustries.Sapphire.preference.MaterialPreference
+            android:title="@string/basic_util"/>
+
+    <CheckBoxPreference
+        android:key="show_downloaded"
+        android:title="@string/task_title"
+        android:summary="@string/task_info"
+        android:defaultValue="true" />
+
+        <SwitchPreference
+            android:key="notification_badges"
+            android:title="@string/notification_badges_title"
+            android:summary="@string/notification_badges_summary" />
+
+        <SwitchPreference
+            android:key="lock_workspace"
+            android:title="@string/lock_workspace_title"
+            android:summary="@string/lock_workspace_summary"
+            android:defaultValue="false" />
+
+</PreferenceScreen>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:launcher="http://schemas.android.com/apk/res-auto">
+
+    <Preference
+        android:layout="@layout/immersive_header"/>
+
+        <com.NxIndustries.Sapphire.preference.MaterialPreference
+            android:title="@string/ehs_pref"/>
+    <SwitchPreference
+            android:key="show_dashboard"
+            android:title="@string/enable_ehs"
+            android:defaultValue="false" />
+
+        <com.NxIndustries.Sapphire.preference.CardCategory />
+        <com.NxIndustries.Sapphire.preference.MaterialPreference
+            android:title="@string/page_set"/>
+
+        <com.NxIndustries.Sapphire.preference.SeekBarDialogPreference
+            android:key="extended_icons"
+            android:title="@string/iss"
+            android:summary="@string/iss_info"
+            launcher:max="144"
+            launcher:min="48"
+            launcher:defaultValue="48" />
+
+        <net.margaritov.preference.colorpicker.ColorPickerPreference
+            android:key="edrawer_background"
+            android:title="@string/ehs_drawer"
+            android:defaultValue="@color/quantum_bluegrey400"
+            android:dependency="show_dashboard"/>
+        <net.margaritov.preference.colorpicker.ColorPickerPreference
+            android:key="ebar_background"
+            android:title="@string/ab_background"
+            android:defaultValue="@color/quantum_bluegrey400"
+            android:dependency="show_dashboard"/>
+
+    <net.margaritov.preference.colorpicker.ColorPickerPreference
+        android:key="text_background"
+        android:title="@string/app_text"
+        android:defaultValue="@color/white"
+        android:dependency="show_dashboard"/>
+
+        <net.margaritov.preference.colorpicker.ColorPickerPreference
+            android:key="search_active_background"
+            android:title="@string/search_active"
+            android:defaultValue="@color/black"
+            android:dependency="show_dashboard"/>
+
+        <net.margaritov.preference.colorpicker.ColorPickerPreference
+            android:key="search_unactive_background"
+            android:title="@string/ua_search"
+            android:defaultValue="@color/white"
+            android:dependency="show_dashboard"/>
+
+</PreferenceScreen>

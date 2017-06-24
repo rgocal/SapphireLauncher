@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="elasticdragdismisslayout-1.0.2">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.commit451/elasticdragdismisslayout/1.0.2/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.commit451/elasticdragdismisslayout/1.0.2/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.commit451/elasticdragdismisslayout/1.0.2/afe3821daa5639222deded35be7e3ea2939fac18/elasticdragdismisslayout-1.0.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

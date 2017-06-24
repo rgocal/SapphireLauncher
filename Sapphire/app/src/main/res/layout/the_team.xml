@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:text="Sapphire Launcher  is a product of GocalSD."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView20"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textView21"
+        android:textColor="@color/blue"
+        android:textStyle="normal|bold" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_expand"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/imageView4"
+        android:tint="@color/blue" />
+
+    <TextView
+        android:text="Learn more by swiping up."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView21"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textView22"
+        android:textColor="@color/blue"
+        android:textStyle="normal|bold" />
+
+    <TextView
+        android:text="Sapphire is an experimental google project launcher by Ryan Gocal. A 2+ year investment powered by community enthusiast and die hard followers. Thankyou for those who are 100% dedicated."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView20"
+        android:gravity="center"
+        android:textColor="@color/blue"
+        android:textSize="14sp"
+        android:layout_below="@+id/textView17"
+        android:layout_alignParentStart="true"
+        android:padding="8dp" />
+
+    <ImageView
+        app:srcCompat="@mipmap/ic_launcher_two"
+        android:id="@+id/imageView3"
+        android:layout_above="@+id/textView17"
+        android:layout_centerHorizontal="true"
+        android:layout_width="112dp"
+        android:layout_height="112dp" />
+
+    <TextView
+        android:text="About Sapphire Launcher"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView17"
+        android:textColor="@color/blue"
+        android:textSize="36sp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:padding="8dp" />
+</RelativeLayout>

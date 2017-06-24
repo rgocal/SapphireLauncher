@@ -1,0 +1,125 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:id="@+id/actionBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/blue"
+        android:gravity="center"
+        android:padding="6dp">
+
+        <Button
+            android:id="@+id/backButton"
+            android:textColor="@android:color/primary_text_dark"
+            android:layout_height="wrap_content"
+            android:text="@string/back"
+            android:background="@drawable/mask_ripple"
+            android:layout_width="150dp" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:fontFamily="sans-serif-bold"
+            android:text="@string/page"
+            android:layout_margin="4dp" />
+
+        <Button
+            android:id="@+id/nextButton"
+            android:layout_width="150dp"
+            android:textColor="@android:color/primary_text_dark"
+            android:layout_height="wrap_content"
+            android:text="@string/next"
+            android:background="@drawable/mask_ripple" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/actionBar"
+        android:layout_marginBottom="5dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="165dp"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal">
+
+            <com.NxIndustries.Sapphire.wallpapers.ThumbnailView
+                android:id="@+id/imageView1"
+                android:layout_width="165dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp" />
+
+            <com.NxIndustries.Sapphire.wallpapers.ThumbnailView
+                android:id="@+id/imageView2"
+                android:layout_width="165dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="165dp"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal">
+
+            <com.NxIndustries.Sapphire.wallpapers.ThumbnailView
+                android:id="@+id/imageView3"
+                android:layout_width="165dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp" />
+
+            <com.NxIndustries.Sapphire.wallpapers.ThumbnailView
+                android:id="@+id/imageView4"
+                android:layout_width="165dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="165dp"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal">
+
+            <com.NxIndustries.Sapphire.wallpapers.ThumbnailView
+                android:id="@+id/imageView5"
+                android:layout_width="165dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp" />
+
+            <com.NxIndustries.Sapphire.wallpapers.ThumbnailView
+                android:id="@+id/imageView6"
+                android:layout_width="165dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fillViewport="false"
+    android:scrollbarSize="1dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dashboard_category_margin_bottom"
+        android:elevation="@dimen/dashboard_category_elevation"
+        android:orientation="vertical"
+        android:paddingEnd="@dimen/dashboard_category_padding"
+        android:paddingLeft="@dimen/dashboard_category_padding"
+        android:paddingRight="@dimen/dashboard_category_padding"
+        android:paddingStart="@dimen/dashboard_category_padding">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.NxIndustries.Sapphire.widget.TextView
+                android:layout_width="wrap_content"
+                android:textAlignment="viewStart"
+                android:text="@string/workspace_more_title"
+                android:textStyle="normal|bold"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:textColor="@color/blue" />
+
+            <ImageView
+                android:id="@+id/cust_icon"
+                android:src="@drawable/ic_view_cust"
+                android:layout_width="@dimen/dashboard_tile_image_size"
+                android:layout_height="@dimen/dashboard_tile_image_size"
+                android:scaleType="centerInside"
+                android:tint="@color/blue"
+                android:transitionName="customization"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="16dp" />
+
+        </RelativeLayout>
+
+        <!-- Category Start-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:clickable="true"
+            android:background="?attr/selectableItemBackground"
+            android:minHeight="@dimen/dashboard_tile_minimum_height"
+            android:id="@+id/homescreen">
+            <ImageView
+                android:src="@drawable/ic_settings_homescreen"
+                android:layout_width="@dimen/dashboard_tile_image_size"
+                android:layout_height="@dimen/dashboard_tile_image_size"
+                android:layout_marginEnd="@dimen/dashboard_tile_image_margin_end"
+                android:layout_marginLeft="@dimen/dashboard_tile_image_margin_start"
+                android:layout_marginRight="@dimen/dashboard_tile_image_margin_end"
+                android:layout_marginStart="@dimen/dashboard_tile_image_margin_start"
+                android:scaleType="centerInside"
+                android:tint="@color/blue" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+                    <com.NxIndustries.Sapphire.widget.TextView
+                        android:text="@string/homescreen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="marquee"
+                        android:fadingEdge="horizontal"
+                        android:singleLine="true"
+                        android:textAppearance="?android:textAppearanceMedium" />
+                    <com.NxIndustries.Sapphire.widget.TextView
+                        android:text="Your personal android desktop screen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:textAppearanceSmall"
+                        android:textColor="?android:attr/textColorSecondary" />
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="?android:attr/dividerHorizontal" />
+            </LinearLayout>
+        </LinearLayout>
+        <!-- Category End-->
+
+        <!-- Category Start-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:clickable="true"
+            android:background="?attr/selectableItemBackground"
+            android:minHeight="@dimen/dashboard_tile_minimum_height"
+            android:id="@+id/dock">
+            <ImageView
+                android:id="@+id/dock_tile"
+                android:transitionName="dock"
+                android:src="@drawable/ic_settings_dock"
+                android:layout_width="@dimen/dashboard_tile_image_size"
+                android:layout_height="@dimen/dashboard_tile_image_size"
+                android:layout_marginEnd="@dimen/dashboard_tile_image_margin_end"
+                android:layout_marginLeft="@dimen/dashboard_tile_image_margin_start"
+                android:layout_marginRight="@dimen/dashboard_tile_image_margin_end"
+                android:layout_marginStart="@dimen/dashboard_tile_image_margin_start"
+                android:scaleType="centerInside"
+                android:tint="@color/blue" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+                    <com.NxIndustries.Sapphire.widget.TextView
+                        android:text="@string/dock"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="marquee"
+                        android:fadingEdge="horizontal"
+                        android:singleLine="true"
+                        android:textAppearance="?android:textAppearanceMedium" />
+                    <com.NxIndustries.Sapphire.widget.TextView
+                        android:text="Favorited apps given a hotseat on your launcher homescreen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:textAppearanceSmall"
+                        android:textColor="?android:attr/textColorSecondary" />
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="?android:attr/dividerHorizontal" />
+            </LinearLayout>
+        </LinearLayout>
+        <!-- Category End-->
+
+        <!-- Category Start-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:clickable="true"
+            android:background="?attr/selectableItemBackground"
+            android:minHeight="@dimen/dashboard_tile_minimum_height"
+            android:id="@+id/drawer">
+            <ImageView
+                android:src="@drawable/ic_settings_drawer"
+                android:layout_width="@dimen/dashboard_tile_image_size"
+                android:layout_height="@dimen/dashboard_tile_image_size"
+                android:layout_marginEnd="@dimen/dashboard_tile_image_margin_end"
+                android:layout_marginLeft="@dimen/dashboard_tile_image_margin_start"
+                android:layout_marginRight="@dimen/dashboard_tile_image_margin_end"
+                android:layout_marginStart="@dimen/dashboard_tile_image_margin_start"
+                android:scaleType="centerInside"
+                android:tint="@color/blue" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+                    <com.NxIndustries.Sapphire.widget.TextView
+                        android:text="@string/drawer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="marquee"
+                        android:fadingEdge="horizontal"
+                        android:singleLine="true"
+                        android:textAppearance="?android:textAppearanceMedium" />
+                    <com.NxIndustries.Sapphire.widget.TextView
+                        android:text="App Drawer contains all of your installed applications"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:textAppearanceSmall"
+                        android:textColor="?android:attr/textColorSecondary" />
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="?android:attr/dividerHorizontal" />
+            </LinearLayout>
+        </LinearLayout>
+        <!-- Category End-->
+
+        <!-- Category Start-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:clickable="true"
+            android:background="?attr/selectableItemBackground"
+            android:minHeight="@dimen/dashboard_tile_minimum_height"
+            android:id="@+id/folders">
+            <ImageView
+                android:src="@drawable/ic_settings_folder"
+                android:layout_width="@dimen/dashboard_tile_image_size"
+                android:layout_height="@dimen/dashboard_tile_image_size"
+                android:layout_marginEnd="@dimen/dashboard_tile_image_margin_end"
+                android:layout_marginLeft="@dimen/dashboard_tile_image_margin_start"
+                android:layout_marginRight="@dimen/dashboard_tile_image_margin_end"
+                android:layout_marginStart="@dimen/dashboard_tile_image_margin_start"
+                android:scaleType="centerInside"
+                android:tint="@color/blue" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+                    <com.NxIndustries.Sapphire.widget.TextView
+                        android:text="@string/folders"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="marquee"
+                        android:fadingEdge="horizontal"
+                        android:singleLine="true"
+                        android:textAppearance="?android:textAppearanceMedium" />
+                    <com.NxIndustries.Sapphire.widget.TextView
+                        android:text="Created by the user by placing multiple apps on top of one another on your homescreen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:textAppearanceSmall"
+                        android:textColor="?android:attr/textColorSecondary" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <!-- Category End-->
+
+        <!-- Category Start-->
+
+        <View
+            android:layout_width="match_parent"
+            android:background="@drawable/card_shadow"
+            android:layout_height="6dp" />
+        <!-- Category End-->
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.NxIndustries.Sapphire.widget.TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="viewStart"
+                    android:text="@string/immersive"
+                    android:textStyle="normal|bold"
+                    android:textColor="@color/blue"
+                    android:layout_margin="16dp" />
+
+                <ImageView
+                    android:src="@drawable/ic_view_immers"
+                    android:layout_width="@dimen/dashboard_tile_image_size"
+                    android:layout_height="@dimen/dashboard_tile_image_size"
+                    android:tint="@color/blue"
+                    android:transitionName="immersive"
+                    android:id="@+id/imers"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_margin="16dp" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:clickable="true"
+                android:background="?attr/selectableItemBackground"
+                android:minHeight="@dimen/dashboard_tile_minimum_height"
+                android:id="@+id/ehs">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical"
+                        android:paddingStart="16dp">
+                        <com.NxIndustries.Sapphire.widget.TextView
+                            android:text="@string/ehs_pref"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="marquee"
+                            android:fadingEdge="horizontal"
+                            android:singleLine="true"
+                            android:textAppearance="?android:textAppearanceMedium" />
+                        <com.NxIndustries.Sapphire.widget.TextView
+                            android:text="Adds an extra screen to the most left side"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:textAppearanceSmall"
+                            android:textColor="?android:attr/textColorSecondary" />
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="?android:attr/dividerHorizontal" />
+                </LinearLayout>
+                <!-- Category End-->
+
+                <!-- Category Start-->
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:clickable="true"
+                android:background="?attr/selectableItemBackground"
+                android:minHeight="@dimen/dashboard_tile_minimum_height"
+                android:id="@+id/s_widget">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical"
+                        android:paddingStart="16dp">
+                        <com.NxIndustries.Sapphire.widget.TextView
+                            android:text="@string/searchBar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="marquee"
+                            android:fadingEdge="horizontal"
+                            android:singleLine="true"
+                            android:textAppearance="?android:textAppearanceMedium" />
+                        <com.NxIndustries.Sapphire.widget.TextView
+                            android:text="A Google powered immersive search widget"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:textAppearanceSmall"
+                            android:textColor="?android:attr/textColorSecondary" />
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="?android:attr/dividerHorizontal" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

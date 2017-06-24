@@ -1,0 +1,594 @@
+Sapphire UI
+Current Build: 11 Stable
+Developer: Ryan Gocal (Nx Biotic)
+-------------------------------
+
+**11.2.1**
+--Settings--
+-Committed Preference Fix
+-Fixed Wierd Vector Drawable Glitch
+-Fixed License Dialog Activity Bug
+-Style Improvements In Feature Settings Page
+-Fixed DPI Issue On Plus1 Activity
+-Taskbar Disabled On First Start (Saves on resource consumption on setup, plus its not done yet sooo....)
+-Taskbar Maintenance (A few bugs have been traced)
+-Extended Drawer Icon Size Tweak (Working DPI adjustment settings for Tablets and Phaplets, Higher def on HDPI devices)
+-Tweaked FAB Layout Margin
+-Tweaked Margins In Extended Drawer Actionbar (Appropriate Fixes expected in future)
+
+**11.2**
+--Gestures--
+-Committed SDK 23 Permissions
+-Revamped Gesture Detector
+-Fixed Confirm On Launch Dialog
+-Dialog Now Appears Asking User If Sketch Is Correct Or Create One
+-Add Sketch Activity Revamped
+-Several Sections Of Deprecated Code Removed and/or Replaced
+-Manifest Fixes
+-Layout and DPI Fixes
+-Tablet Gesture Helper Fixes (Tested on Nexus7, got wack readings in dev build)
+-Overall Improvements (Will be monitoring activity in Google Plus Group)
+-Replaced Color Chooser In Gesture Creator
+-Massive Cleanup Of Gesture Recognization Code
+
+--Dashboard--
+-Renamed to Extended Home Screen
+-Trashed Orignal Card Concept
+-Implemented New Active Header (Weather Information, Next Alarm, Clock, Date and Battery Status)
+-Under The Hood Maintenance For Active Header (Future Improvments are garunteed)
+-Interactive Search Bar (Google Profile Avatar, App Drawer Search, Google Plus Post)
+-Vertical App Drawer (Most recently used apps are brought to the front)
+-Google Powered Fab (Now, Weather, Voice, Playstore)
+-Supports Icon Packs In Custom Firmware (MIUI, EMUI, CYANOGENMOD, Ect)
+-Smoother Transistion From Custom Content To Launcher
+-Full Customization Added
+-When Enabled, Will Be Default Screen
+-Added A ChromeCustomTab For Google Weather On Weather Icon(No built in weather yet)
+-Ability To Hide Header Content For Taskbar Space
+-Default Home Screen Will Set Correctly Until Search Is Innitiated
+-Fixed DPI Issues For Icons
+-Removed Deprecated Advance Features
+
+--Launcher--
+-Misc Code Cleanup, Transistions Polished, Backported API's Removed (For Jellybean and below)
+-Color Fixes, Transition Fixes, Layout Fixes, Key Imports, Customization Fixes
+-Added Card Corner Radius to Taskbar
+-Overview Mode Updated To Transistion To Custom SystemBar Colors
+-Removed Context Menu
+-Replaced Context Menu With BottomSheet Menu
+-Removed Color In Overview Mode, Translucent
+-Recoded Dashboard Inflation (Fixed Fragment Crashes)
+-Added Material Fab Menu In Dashboard
+-Yahoo Weather Intent Switched For Google Weather
+-Experimental Dashclock Extensions Panel
+-Dashclock Extension Panel Has Launcher Shortcut
+-Swept Through Framework For Useless Code
+-Added Android Settings Home Manager Intent
+-Re-Styled Overview Mode
+-Fixed Rotation Layouts (correct me if im wrong)
+-Revamped Tablet Layouts
+-Revamped Phablet Layouts
+-Revamped Digital Clock
+-Removed Gbar Widget (we will miss you...not)
+-Added Digital Clock Preview
+-Removed 24hr Clock Format For 12hr Format In Widget
+-Fixed Wallpaper Subject Picker Style
+-Wallpapers Archive Reader Now OTA (I can change and add wallpapers at any time, muhahaha)
+-Fixed Lock Desktop Bug
+-Slick Drawer Has Same Customization As Extended Drawer (White background default)
+-Cleaned Up Notification Listener For Android6
+-Changed Notification Badge Color To Blue
+-New Faster Startup Activity
+-Theme Fixes
+
+--Settings--
+-Cleaned And Organized, Direct Listening
+-Statusbar Custom Color
+-Navbar Custom Color
+-Changed Changelog Text Color Blue
+-Material Icons Added To Launcher Shortcuts
+-Recoded Launcher Settings (Material effect, Minimal Syle, Moved Categories, More Responsive)
+-Donation Dialog Fixed (Now disappears with keys installed)
+-Added Pragmatical Home Set Action In General Settings
+-Removed Backer Page
+-Replaced Backer Page With Downloadable Content Page
+-Replaced Email/Request Page With Share Intent (Thankyou google)
+-Replaced Libs Activity With AboutLibraries Activity
+-Revamped About Page
+-Premium/Onyx Owners Granted Special Title
+-Fixed News Internet Bug
+-Onyx Member Title Have Priority Over Premium Title
+-Onyx License Now Available To Purchase (All proceeds are very thankfull)
+-New Notification Gesture Listener
+-Added Gesture Listener To Input Customization Array
+-Added Dashclock Panel To Input Customization Array
+-Added Slick Drawer To Input Customization Array
+
+--Taskbar--
+(Taskbar is not finished...Excuse the dust)
+-Native Quick Search On Google Logo Click
+-All Apps Click On AllApps Button Click
+-Short Press On Action Button For Standalone Google Now
+-Long Press On Action Button For Workspace Menu
+-Enable/Disable Via Launcher Settings
+-Change Widget Color Via Launcher Settings
+
+--Google--
+-Updated Google Buttons
+-Updated Login Page Style
+-Cleaned Up Deprecated Code
+-Login Should Be Faster And Responsive
+
+--Gradle/Manifest--
+-Updated Gradle For New Libraries
+-Replaced Glide With Picasso (Smoother Transition?)
+-Cleaned Up Manifest and Res Folders
+-Started Vector Drawable Importing
+-Higher Compression Enabled
+
+--Android 6.0+ Permissions--
+-Read External Storage (For performance caching, debugging, and gestures)
+-Write External Storage (For creating gestures and saving them)
+-General Maintenance (More Permissions will be added as needed)
+
+--Update--
+**11.1**
+-Revamped Material Dashboard Interface
+-Underground Development For Dashboard Inhancements
+-Removed Fab Menu
+-Added S Badge (Alpha Concept)
+-Added Set Default Home Option in General Settings
+-Categorized Sapphire Dashboard and Sapphire Badge (Cleaner)
+-Added Donation Snackbar Notification (Working on toggle)
+-Added Icons To Preferences
+-Added Material Google Shortcuts In Dashboard
+-Updated Weather Card (Prepping for weather data)
+-Manifest Fixes For Android M
+-Removed Serveral Permissions Dealing With OEM (Deprecated)
+-Added Sapphire UI Wallpapers (Requires a data connection)
+-Added Permission Utils For Android M Storage (Not yet active)
+-Misc Style Fixes
+-Fixed A Bug Where Launcher Workspace Would Randomly Freeze On Android M
+-Patched Shared Preferences
+-Extended Screen Maintenance
+-App Intro Maintenance
+-Added Legacy HTTP Access For Wallpaper Access Over URL (Its old...but it works)
+-Disabled Sapphire Dashboard On First Start (Just because of ForceCloses)
+
+--Hotfix--
+**11.0.2**
+-Redid First Startup Graphics
+-Fixed Email String In Request
+-Fixed Shared Preferences (OnDemand Tweaking)
+-Tweaked Changelog Layout For Tablets
+-Changed String Titles In Workspace Menu
+-Removed Polish Warning In Preferences (Hopefully its not needed anymore...)
+-Fixed Plus One View (An increasing amount of users broke the view...GOOD JOB!)
+-Patched Bug Reporting Feature (Sorry Google if you got spammed with bug reports...)
+-Added Gradient ImageView Below SearchFrame In Dasbhoard (So we can see the navbar better)
+-Removed Native Android Wallpaper Picker (Lets get creative)
+-Added Simple Wallpaper Picker (Paper Wallpapers coming soon)
+-Patched Complex Gestures (Android M will disable them as they are not ready yet, A standalone update is being scheduled)
+-Small Fixes For Dock On Phablets
+
+--Hotfix--
+**11.0.1**
+-Values Of First Startup Set To True For Fab Menu and Dashboard (Initially false but got undesirable results)
+-Corrected LauncherModel Values Regarding Preferences
+-Added Sdrawer Widget Shortcut
+-Patched AutoInstaller
+-Added Lenova Permissions (Widget Support?)
+-Added Samsung Permissions (Widget Support?)
+-Re-Enabled Google Plus Feed Sharing In Dashboard
+-Fixed Color Drawable
+-Added Yahoo Weather URI To Weather Icon In Dashboard (Untill A Final Concept For Weather Goes In Affect)
+-Re-Aligned Parent Layout In Dashboard
+-Revamped Dashboard for future content (Google Search Frame now located at the bottom with a padding to scale on screen nav buttons)
+-First Startup Concept Finished (Il improve device screen sizes later...)
+-Added Orientation To Sdrawer
+-New Email Added For Support
+-Updated License
+-Updated Library Usages
+-Rewrote Default Workspace
+-Patched Launcher Settings SharedPreferences (Almost have it fixed...maybe in future update we can apply customization without Polishing)
+
+[Version 11.0.0]
+*Milestone Release*
+--Workspace--
+*Rebased Trunk
+*Heavily Modified Workspace/Hotseats/Favorites/Shortcuts/IconCache/Model/Render/Framework/LauncherState/AppState and more...
+*Heavily Modified Runtime for best possible performance and compadibility
+*Re-Engineered Launcher Source
+*Removed Private AOSP APIs
+*Ported Slim Rom Launcher Tweaks
+*Ported Trebuchet Overview and Set Homescreen
+*Revamped Tweak-Enable/Disable Fabrication menu
+*Icon and Grid customization added to Homescreen
+*Tweak-Swap to a Vertical Drawer, Cyanogenmod Drawer or Google AOSP Card Drawer
+*Tweak-Hide Apps
+*Tweak-Change Grid Size of App Drawers
+*Tweak-Icon Customization and Drawer Background Tweaks
+*Tweak-Icon Notification Count
+*Smart Folders ported from Slim Rom
+*Tweak-Folder Customization
+*Tweak-Drawer Customization
+*NEW-Swipe and Gesture Input Ported From Cyanogenmod Launcher
+*Tweak-Customize Input of Back/Home/Menu Buttons (Based on ADW Launcher)
+*Revamped Smart Grid
+*Revamped Workspace Code
+*Removed Deprecated Code With Android 6.0.1 Compile
+*Fixed XML Layout Parsing Bug
+*Fixed Icon Pack Parsing
+*Icon Pack Support (Exclusives Coming!)
+*Added Workspace Shortcuts (Based on Slim Launcher Code)
+*Revamped Device Profile Detector
+*Revamped Fabrication Menu
+*Re-Engineered Hotseat Placement
+*Added Support For Custom Shortcuts For Buttons and Gestures
+*Interface Enhancements
+*Fixed Set Wallpaper Bug on Android M
+*Tweaked Custom Shortcuts In Widgets
+*Heavily Modified Cell Layout
+*Heavily Modified Launcher Runtime Engine
+*Added Gesture Helper
+*Added Application Helper
+*Added Color Helper
+*Added Shortcut Helper
+*Modified Receivers
+*Removed Google Search Global Updater (We dont have a widget for this...be gone with you!)
+*Custom Material Animation Frames Added
+*Revamped Debugger Service (Future Send Feedback button?)
+*Optimized Preload Icon Service
+*Heavily Modified SearchDropTargetBar (So we can save some apartment space)
+*Fixed Gesture Detector Theme
+*Added Gesture Detector Workspace Shortcut
+*Background work for simple custom gesture shortcuts (Coming soon)
+
+--Fab Menu--
+*Native Drawer Swapped For S Drawer
+
+--Widgets--
+*Added Google Plus Post Dialog (Almost Done 1/19/15)
+*Added Support For Media Upload On Widget (Almost Done)
+*Added Support For New Smart Grid
+
+--Settings--
+*Re-Engineered Launcher Settings
+*Re-Engineered Shared Preferences
+*Injected Slim Custom Properties To Sapphire Launcher
+*Fixed Several Bugs Interfering with Android M
+*Added Several Patches For Compadibility (Mostly For Unlocked Devices with Android 5.0+ Ports)
+*Moved Homescreen Gestures and Settings to Gestures and Buttons
+*Cleaned Up Categories
+*Added Get Themes Helper
+*Added Google Plus One Button (Ratings are good to...)
+*Cleaned Up Deprecated Code
+*Custom Launcher Settings Service Detects Changes Automatically (Sapphire Engine)
+*Icon Theme Engine
+*Android M Theme Fixs
+*Custom Keys Added
+*Optimized Fragments
+*Revamped Support Category (Readying for Customer Care and Feedback Program)
+*Added Share Option (Offline 1/21/15)
+*Added Restart Option
+*Added Clear Data Option
+*Added Share to Google Plus option
+*Added Report Bug Feature
+*Added User Feedback Options (Prepare for spamming...sigh...)
+*Updated Helpers In System
+*Updated
+*Added S Drawer Light Settings In Drawer Category
+*Added Notification Strings To Each Category
+*Bug Reports send as Crashes (May add choice in later update)
+
+--Gradle--
+*Updated Android SDK Properties
+*Updated Google Plus API (Updated permissions for Android M and Sign In Activity)
+*Updated Android Support
+*Updated Build Tools
+*Updated Google Services
+*Updated Graddle Wrapper
+
+--Google--
+*Rewrote Google Sign Activity Based On Google Example (With Android M fixes)
+*Updating Dashboard Google Code
+
+--Dashboard--
+*Re-Enabled For New Base
+*Revamped Custom Content Container Service
+*Swipe RTL Added To Dashboard (woohoo!)
+*Revamped Overview Gesture Service
+*Custom Content Counts As Screen (Overview Mode automatically sets as default screen1)
+*Added Toggle In Settings (It wont hurt my feelings I guess...)
+*Added Custom Key For Toggle
+*Added Slick Drawer
+*Implemented Light S Drawer Settings
+
+--Launcher--
+*New Icon
+*New Milestone
+*Rebased on Launcher3 android5.1.1.1 r33
+*Workspace Custom Settings Based on Slim Rom Launcher
+*Overview Mode Based on CyanogenMod Trebuchet Launcher
+*Smart Grid Based on Omni Rom Custom Settings
+*Theme Management Based on Custom Rom Community Devs (Thanks for the help!)
+*Custom Content Service Rebuilt
+*New Setup Screen
+
+**Old Changes Have Been Archived**
+-Version10 Changelog Archived
+
+[Version 11.0.0]
+*Milestone Release*
+
+[Version 10.9.2]
+--Dashboard--
++Deadly Crash On Android 5.0.1 Fixed? (Calendar View Removed)
+
+
+[Version 10.9.1]
+--Dashboard--
++Removed Attatchment Share (I will bring it back, patience)
++Removed Google Plus Cover Photo and Profile Photo (Caused crash when device lost data, will look into a fix)
++Improvements to Post Google Plus (Working on a new method and intent for posting and sharing)
++Google Card (Appears after google login)
++Added Google Login button in dashboard (Located in Time Card)
++Started Work on Material Date View (Will be ready in next update)
++Fixed Number of Followers (Enable to be public in google plus profile if value is 0)
+
+--Workspace--
++Android M Performance Patches
++Google Plus API Bug Fixes (Login would crash launcher workspace)
++Google Color Theme Fixes (Will improve settings later)
++Backbone Code (Started to write structure for future improvements)
+
+--Gradle--
++Updated Gradle Properties (Faster build times for me, nothing for you)
++Sapphire UI Google Services Warning Added (Launcher will warn users if their google services is outdated and proceed to push the update)
+
+--Settings--
++Added PlusOneButton In Hyperlink (Just for looks)
++Added Workspace Summary Hints
+
+[Version 10.9]
+--Gradle--
++Patched Android SDK23 Build
++Updated Build Tools
++Patched Google Services API
++Patched Google Plus API
++Security Patches
++Compilation Fixes & Compression
++Overall APK Size Compression Increased
+
+--Workspace--
++5 App Dock
++Rebuilt Launcher onBinding
++Reconstructed CustomContent Detector
++BackPorted Kitkat Launcher3 Custom Content Page onCreate Method
++Modifed Workspace Loader
++Updated Dynamic Grid
++Re-Alinged Launcher Configurations
++Added Sapphire Dashboard Version 2.0 As Extended Home Screen (Holy Balls Batman)
++Fixed Orientation Bug
++Moved All Apps Button To Fabrication Menu (Working on alternative app drawer for Dasbhoard)
++Removed Beta Dashboard From Launcher
++Changed Fab Color To White (White goes with anything...right?)
++New Google Color Fab Icons
+
+--Dashboard--
++Revamped To Version 2.0
++Completely ReWritten From Ground Up
++Concept Based On Cyanogen Home Extension (Code is no way, shape, or form the same)
++Live Cards
++Persistant Cards
++Profile Cards
++Google Plus API Revamped Integration
++Security Patches
++Fragment Adaption
++Converted To Home Extension
++Added Google Now Search Card
++Added Settings Shortcut
++Added Google Profile Shortcut
++Added All Apps Shortcut
++Added Calendar Card
++Added Locale Card
++Google Bar Card (Post with attatchment isnt working porperly, report back)
++Circle Button Widgets
++Re-Added Google Now Quick Search
++Re-Added Google Now Voice Search (With OK Google Detection)
++Home Nav Button (Navigates back to workspace)
+
+[Version 10.0.8]
+--Workspace--
++Added GBar Widget (Google Plus Feed, Play Store Launch, Post To Feed)
++Added Digital Clock Widget (Still Work in progress, more features?)
++Misc Fixes For Widget Preparations
++Removed Experimental Code For Intent Shortcuts
++Cleaned Up Launcher Preferences
++Under The Hood Work For Dashboard V2.0 (Full Revamp coming soon)
++Google Plus API Maintenance
++Manifest Fixes
++Orientation Fixes (Activities are supposed to listen to device orientation lock, lets see if it listens...)
++Added Dashboard Settings Page (empty, for now)
+
+
+[Version 10.0.7]
+--Workspace--
++Fixed Orientation Bug (Now listens to system orientation toggle)
++Fixed Widget Icon Cache(Fixed a bug where icon cache would clear in widgets and shortcuts)
++Fixed Med Bug (Fixed rare bug where Launcher would freeze in Android M upon swithing tweaks and checking out the Dashboard)
++Tablet Fabrication Menu Fixes (removed graphic bar for Tablets)
++Added 10inch Tablet Support
++Added 7inch Tablet Support (officially)
+
+User Note: If launcher freezes after applying tweaks, press the restart launcher preference. Make it a habit to press this preference after applying grid tweaks. Sometimes android will not notice the changes fast enough.
+
+
+[Version 10.0.6]
+--Workspace--
++Fabrication Menu Icon Added
++Under The Hood Maintenance
++Rebased Launcher Code on Latest Android 5.1 Launcher3 Git
++Modified Device Profile Grid Background Data
++Heavily Modified AppState Background Data
++Updated Theme For Shortcut Creator
++Changed Theme To Dialog For Shortcut Creator
+
+--Manifest--
++Cleaned Up Permissions Not Needed
+
+--Settings--
++Under The Hood Maintenance and Changes
++SharedPreferences Maintenance
++Style Updated
++Added Workspace Settings
++Added Workspace Rows and Columns Preferences
++Added Extended Workspace Toggle (hide fabrication menu)
++Removed Orientation Toggle (Broke launcher tweaks, lets just use the android orientation toggle)
++Added Google Play Developer Page
++Added Launcher Restart Dev Option
++Cleaned Up Helper Code
++New Material Pager Interface
++Organized Menu Options (Look! Your menu is different now)
++Added Google Play HyperLink
++Updated Toolbar
++Easiely Become a Sapphire Backer
++Added Backbone for Dasbhoard and Exclusive Settings For Future Update
++Settings Page Fully Updated And Revamped For Stable Release
+
+--Dashboard--
++Brightness Control Requires Automatic Brightness Control Off
++Removed Changelog Menu Option (Moved)
+
+
+[Version 10.0.5]
+--Workspace--
++ Compiled SDK Raised To 23
++ Landscape Support Added
++ Tablet Support (Optimizing)
++ More Optimization for Android M
++ Launcher Base Code Optimization
++ Misc Android M Deprecation Patches
++ Android M Bug Fixes For Gestures
++ Android M Bug Fixes For Launcher Initialization
++ New Fabrication Menu Icons
++ New Launcher Icon
+
+--Settings--
++ Toggle-able Orientation
++ License Dialog
++ Revamped Chagelog Viewer
++ Revamped Lib Viewer
++ Removed Bookmarks For Gesture Creation (Deprecated for Android M)
++ Added Android OS Identifyer In Preferences Below Compiled SDK
++ Fixed String Values
+
+--Dashboard--
++ Replaced ImageViews with KenBurnsView
++ Teal500 Color to Sapphire Menu Title
+
+--Community Notice--
++Thankyou for your cooperation and community feedback! Please please please, keep the feedback coming! PM me on hangouts if you want to. Take advantage of the forums, post your thoughts on Google Plus Groups, get involved!
+
+[Version 10.0.4]
+--Workspace--
++ Improved Feedback
++ Improved Transistions
++ Replaced Google Now Fab with Fabrication Menu (Google Now, Dashboard, Gesture)
++ Removed Google Search Text
++ Fixed Overlapping View Glitch (during development)
++ Rebased Launcher Base Structure
++ Added Gesture Support (Launch Activities, shortcuts, settings)
++ Added First Run Cling with Google SignIn Option
++ Modified Cling Behavior
+
+--Dashboard--
++ Matierial.Light.DarkActionbar added to Submenus
++ Added Random Backdrop to NavDrawer
++ Display Slider Adjust Dasbhoard Brightness (Working on system wide change...)
++ Optimal Display Adjustments
+
+--Settings--
++ Added Gesture Support
++ Ability To Create and Maintain Gestures
++ User Gesture Adjustment Settings Added
++ Background Work for Card Management
++ A TON of adjustments for Gesture Support for Android L+
+
+--Launcher--
++ Android M Support?
++ Added Misc Permissions (Regarding Gestures)
++ Added Users Information Practices
++ Updated Manifest for Android L Support
+
+
+[Version 10.0.3]
+--Dashboard--
++ Added Placed Holders (Cards, Features, Settings)
++ Updated OpenSource License Viewer
++ Updated Libraries Viewer
++ Updated Launcher Settings Activity
++ Added Media Uploader to Gbar
++ Updated Gradle Build
++ Optimized Google URL Imports
++ More Fixes For Android M
++ Fex Fixes For Android L
++ Open Beta
+
+[Version 10.0.2]
+--Dashboard--
++ Google Plus API Fully Integrated
++ SignIn Is Optional And Will Replace Banner With GPlus Banner (Maybe...)
++ First Run Activity Added
++ GBar Added (Activates After Google SignIn)
++ GPlus Shortcut In GBar
++ Play Shortcut In GBar
++ Post From GBar
++ Share Sapphire UI From GBar
++ Added Snackbar Notifications
++ Preparing For Open Beta
++ CircularImage Lib Added
++ Bitmap Resolution Optimized
++ Experimental Icons (Tablet Resolution Is Off On Nexus7, WIP)
+
+NOTICE: Profile Banner may get moved to a different location depending on user feedback
+
+[Version 10.0.1]
+--Workspace--
++ Quick Search Bar (qsb) revamp
++ Google Now Standalone Shortcut Added
++ AppCompat Fixes
++ Memory Leak Fixes
++ Faster Transitions Between Widgets and App Drawers
++ Sapphire Shortcuts (WIP)
+
+--Dashboard--
++ Several Interface Fixes
++ Added Usage Activity
++ Added Google Activity
++ Updated Changelog Activity
++ Behind The Scenes Maintenance
++ Google API Maintenance
++ Code Cleanup For QS Card (Readying Display and Sound Slidders)
++ Manifest Fixes
+
+--Launcher Preferences--
++ Cleaning Up
++ Light Theme
+
+[Version 10.0.0]
++ Rebased Launcher on AOSP 5 Launcher3 Branch
++ Removed Privated APIs
++ Optimized Application For SDK22
++ Re-Added Custom Shortcut Creator (Access through Widgets)
++ Revamped Sapphire UI's Dashboard
++ Material GUI Cards & Interface (Background Widget Coding)
++ Fixed Initial Memory Leak
++ Drawer Added To Dashboard
++ Added Changelog Viewer
++ Optimized Settings
++ Added QS Card (Sound and Volume Seekbars wip)
++ Optimization for X64bit Systems
++ Excuse The Dust...
++ More To Come
++ Thankyou Very Much For Testing Alpha Testers!

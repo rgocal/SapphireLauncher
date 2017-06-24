@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/widgets" android:title="Widgets" android:icon="@drawable/ic_menu_widget"/>
+    <item android:id="@+id/anyshortcut" android:title="Activities" android:icon="@drawable/ic_view_shortcuts"/>
+    <item android:id="@+id/wallpapers" android:title="Wallpapers" android:icon="@drawable/ic_menu_wallpaper"/>
+
+    <group>
+        <item android:id="@+id/overview" android:title="Preview Workspace" android:icon="@drawable/ic_menu_preview"/>
+        <item android:id="@+id/personalization" android:title="Personalization" android:icon="@drawable/ic_menu_settings"/>
+    </group>
+</menu>

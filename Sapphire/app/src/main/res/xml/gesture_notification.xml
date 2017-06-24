@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    <com.NxIndustries.Sapphire.preference.MaterialPreference
+        android:key="pref_category_notification"
+        android:title="Notifications"/>
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="pref_gest_notification"
+            android:title="Show shortcut in notification panel" />
+
+        <ListPreference
+            android:defaultValue="min"
+            android:dependency="pref_gest_notification"
+            android:dialogTitle="Priority"
+            android:entries="@array/pref_notification_priority_entries"
+            android:entryValues="@array/pref_notification_priority_values"
+            android:key="pref_gest_notification_priority"
+            android:title="Notification Priority" />
+
+    <com.NxIndustries.Sapphire.preference.CardCategory />
+
+</PreferenceScreen>

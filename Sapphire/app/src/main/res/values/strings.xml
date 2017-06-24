@@ -1,0 +1,619 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <skip />
+
+    <string name="launcher_name">Sapphire Launcher</string>
+    <string name="launcher_version" translatable="false">Version: 12.2.50</string>
+    <string name="launcher_copyright">Copyright \u00A9 2014–2017</string>
+
+    <!-- URI used to import old favorites. [DO NOT TRANSLATE] -->
+    <string name="old_launcher_provider_uri" translatable="false">content://com.android.launcher2.settings/favorites?notify=true</string>
+
+    <!-- Permission to receive the com.NxIndustries.Sapphire.action.LAUNCH intent -->
+    <string name="receive_launch_broadcasts_permission" translatable="false">com.NxIndustries.Sapphire.permission.RECEIVE_LAUNCH_BROADCASTS</string>
+
+    <!-- Permission to receive the com.NxIndustries.Sapphire.action.FIRST_LOAD_COMPLETE intent -->
+    <string name="receive_first_load_broadcast_permission" translatable="false">com.NxIndustries.Sapphire.permission.RECEIVE_FIRST_LOAD_BROADCAST</string>
+
+    <!-- Application name -->
+    <string name="application_name">Sapphire Launcher</string>
+    <!-- Accessibility-facing application name -->
+    <!-- Name for all applications running as this uid. -->
+    <!-- Default folder name -->
+    <string name="folder_name"></string>
+    <!-- Displayed when user selects a shortcut for an app that was uninstalled [CHAR_LIMIT=none]-->
+    <string name="activity_not_found">App isn\'t installed.</string>
+    <!-- Displayed when user selects a shortcut for an app that is current not available [CHAR_LIMIT=none]-->
+    <string name="activity_not_available">App isn\'t available</string>
+    <!-- SafeMode shortcut error string -->
+    <string name="safemode_shortcut_error">Downloaded app disabled in Safe mode</string>
+    <!-- SafeMode widget error string -->
+    <string name="safemode_widget_error">Widgets disabled in Safe mode</string>
+    <!--  Labels for the tabs in the customize drawer -->
+
+    <string name="toggle_weight_watcher">Show Mem</string>
+
+    <!-- AppsCustomize pane -->
+    <!-- Message to tell the user to press and hold on a widget to add it [CHAR_LIMIT=50] -->
+    <string name="long_press_widget_to_add">Touch &amp; hold to pick up a widget.</string>
+    <!-- The format string for the dimensions of a widget in the drawer -->
+    <!-- There is a special version of this format string for Farsi -->
+    <string name="widget_dims_format">%1$d \u00d7 %2$d</string>
+
+    <!-- External-drop widget pick label format string [CHAR_LIMIT=25] -->
+    <!-- External-drop widget error string.  This is the error that is shown
+         when you drag and item into the homescreen and it is unable to fit,
+         or an error is encountered. [CHAR_LIMIT=50] -->
+    <!-- External-drop widget pick title.  This is shown as the title of the
+         dialog which allows you to pick which widgets to handle a particular
+         drop if there are multiple choices. [CHAR_LIMIT=35] -->
+
+    <!-- Folders -->
+    <skip />
+    <!-- Label of Folder name field in Rename folder dialog box -->
+    <!-- Title of dialog box -->
+    <!-- Buttons in Rename folder dialog box -->
+    <!-- Buttons in Rename folder dialog box -->
+
+    <!-- Shortcuts -->
+    <skip />
+    <!-- Title of dialog box -->
+    <!-- Options in "Add to Home" dialog box; Title of the group containing the list of all apps -->
+    <!-- Options in "Add to Home" dialog box; Title of the group containing the list of all shortcut
+s -->
+    <!-- Options in "Add to Home" dialog box; Title of the group containing the list of all widgets/gadgets -->
+    <!-- Error message when user has filled all their home screens -->
+    <!-- Error message when user has filled a home screen -->
+    <string name="out_of_space">No more room on this Home screen.</string>
+    <!-- Error message when user has filled the hotseat -->
+    <string name="hotseat_out_of_space">No more room in the Favorites tray</string>
+    <!-- Error message when user tries to drop an invalid item on the hotseat -->
+    <!-- Message displayed when a shortcut is created by an external application -->
+    <!-- Message displayed when a shortcut is uninstalled by an external application -->
+    <string name="shortcut_uninstalled">Shortcut \"<xliff:g id="name" example="Browser">%s</xliff:g>\" was removed.</string>
+    <!-- Message displayed when an external application attemps to create a shortcut that already exists -->
+
+    <!-- Title of dialog when user is selecting shortcut to add to homescreen -->
+    <!-- Title of dialog when user is selecting an application to add to homescreen -->
+
+    <!-- All applications label -->
+    <string name="all_apps_button_label">Apps</string>
+    <!-- Label for button in all applications label to go back home (to the workspace / desktop)
+         for accessibilty (spoken when the button gets focus). -->
+    <string name="all_apps_home_button_label">Home</string>
+    <!-- Label for trash icon on workspace. Meant to communicate the idea of removing the
+         icon/widget from the home screen, but not permanently. [CHAR_LIMIT=30] -->
+    <string name="delete_zone_label_workspace">Remove</string>
+    <!-- Label for trash icon in All Apps. The icon/widget will become completely unavailable on the
+         device. [CHAR_LIMIT=30]-->
+
+    <!-- Label for delete drop target. [CHAR_LIMIT=20] -->
+    <string name="delete_target_label">Remove</string>
+    <!-- Label for uninstall drop target. [CHAR_LIMIT=20]-->
+    <string name="delete_target_uninstall_label">Uninstall</string>
+    <!-- Label for the info icon. [CHAR_LIMIT=20] -->
+    <string name="info_target_label">App info</string>
+
+    <!-- Accessibility: AllApps button -->
+    <!-- Accessibility: Delete button -->
+
+    <!-- Label for trash icon in All Apps, when an updated system app is selected. The update will
+         be uninstalled. [CHAR_LIMIT=30] -->
+
+    <!-- URL pointing to help text. If empty, no link to help will be created [DO NOT TRANSLATE] -->
+
+    <!--  Strings for the contextual action bar (CAB) in All Apps -->
+    <skip />
+    <!-- Describes the button for uninstalling the currently selected application.
+         Text is not displayed, but provided for accessibility. [CHAR_LIMIT=none] -->
+    <!-- Describes the button for getting details/info about currently selected application.
+         Text is not displayed, but provided for accessibility. [CHAR_LIMIT=none] -->
+    <!-- Appears in the CAB when an app is selected in All Apps or Customize mode. [CHAR_LIMIT=50] -->
+    <!-- Appears in the CAB when a widget is selected in Customize mode. [CHAR_LIMIT=50] -->
+    <!-- Appears in the CAB when a folder is selected in Customize mode. [CHAR_LIMIT=50] -->
+    <!-- Appears in the CAB when a shortcut is selected in Customize mode. [CHAR_LIMIT=50] -->
+
+    <!-- Permissions: -->
+    <skip />
+    <!-- Permission short label -->
+    <string name="permlab_install_shortcut">install shortcuts</string>
+    <!-- Permission description -->
+    <string name="permdesc_install_shortcut">Allows an app to add
+        shortcuts without user intervention.</string>
+    <!-- Permission short label -->
+    <string name="permlab_uninstall_shortcut">uninstall shortcuts</string>
+    <!-- Permission description -->
+    <string name="permdesc_uninstall_shortcut">Allows the app to remove
+        shortcuts without user intervention.</string>
+    <!-- Permission short label -->
+    <string name="permlab_read_settings">read Home settings and shortcuts</string>
+    <!-- Permission description -->
+    <string name="permdesc_read_settings">Allows the app to read the settings and
+        shortcuts in Home.</string>
+    <!-- Permission short label -->
+    <string name="permlab_write_settings">write Home settings and shortcuts</string>
+    <!-- Permission description -->
+    <string name="permdesc_write_settings">Allows the app to change the settings and
+        shortcuts in Home.</string>
+
+    <!-- Widgets: -->
+    <skip />    
+
+    <!-- Text to show user in place of a gadget when we can't display it properly -->
+    <string name="gadget_error_text">Problem loading widget</string>
+
+    <!-- Text to show user in place of a gadget when it is not yet initialized. -->
+    <string name="gadget_setup_text">Setup</string>
+
+    <!-- Text to inform the user that they can't uninstall a system application -->
+    <string name="uninstall_system_app_text">This is a system app and can\'t be uninstalled.</string>
+
+    <!-- Title of the Android Dreams (screensaver) module -->
+
+    <!-- Default folder title -->
+    <string name="folder_hint_text">Unnamed Folder</string>
+
+    <!-- Accessibility -->
+    <skip />
+
+    <!-- The format string for Workspace descriptions [CHAR_LIMIT=none] -->
+
+    <!-- The format string for default page scroll text [CHAR_LIMIT=none] -->
+    <string name="default_scroll_format">Page %1$d of %2$d</string>
+    <!-- The format string for Workspace page scroll text [CHAR_LIMIT=none] -->
+    <string name="workspace_scroll_format">Home screen %1$d of %2$d</string>
+    <!-- The format string for AppsCustomize Apps page scroll text [CHAR_LIMIT=none] -->
+    <string name="apps_customize_apps_scroll_format">Apps page %1$d of %2$d</string>
+    <!-- The format string for AppsCustomize Apps page scroll text [CHAR_LIMIT=none] -->
+    <string name="apps_customize_widgets_scroll_format">Widgets page %1$d of %2$d</string>
+
+    <!-- Clings -->
+    <!-- The title text for the workspace cling [CHAR_LIMIT=30] -->
+    <string name="first_run_cling_title">Welcome to Sapphire UI</string>
+    <!-- The description of how to use the workspace [CHAR_LIMIT=60] -->
+    <!-- The description of how to use the workspace [CHAR_LIMIT=60] -->
+    <!-- The description of how to use the workspace [CHAR_LIMIT=60] -->
+    <!-- The description of how to use the workspace [CHAR_LIMIT=60] -->
+    <!-- The title text for the migration cling [CHAR_LIMIT=30] -->
+    <string name="migration_cling_title">Copy your app icons</string>
+    <!-- The description of what migration does [CHAR_LIMIT=70] -->
+    <string name="migration_cling_description">Import icons and folders from your old Home screens?</string>
+    <!-- The description of the button to migrate apps from another launcher [CHAR_LIMIT=30] -->
+    <string name="migration_cling_copy_apps">COPY ICONS</string>
+    <!-- The description of the button to use the default launcher layout [CHAR_LIMIT=30] -->
+    <string name="migration_cling_use_default">START FRESH</string>
+    <!-- The title text for the workspace cling [CHAR_LIMIT=30] -->
+    <!-- The description of how to use the workspace [CHAR_LIMIT=70] -->
+    <!-- The title text for workspace longpress action [CHAR_LIMIT=40] -->
+    <!-- The description of how to use the workspace [CHAR_LIMIT=70] -->
+    <!-- The description of the button to dismiss the cling [CHAR_LIMIT=30] -->
+    <!-- The title text for the Folder cling [CHAR_LIMIT=30] -->
+    <!-- The description of how to create a folder [CHAR_LIMIT=70] -->
+    <!-- The text on the button to dismiss a cling [CHAR_LIMIT=30] -->
+    <!-- Error message on dummy custom cling layout [DO NOT TRANSLATE] -->
+    <!--<add-resource type="string" name="default_folder_name" />-->
+
+    <!-- Folder accessibility -->
+    <!-- The format string for when a folder is opened, speaks the dimensions -->
+    <string name="folder_opened">Folder opened, <xliff:g id="width" example="5">%1$d</xliff:g> by <xliff:g id="height" example="3">%2$d</xliff:g></string>
+    <!-- Instruction that clicking outside will close folder -->
+    <string name="folder_tap_to_close">Touch to close folder</string>
+    <!-- Instruction that clicking outside will commit folder rename -->
+    <string name="folder_tap_to_rename">Touch to save rename</string>
+    <!-- Indication that folder closed -->
+    <string name="folder_closed">Folder closed</string>
+    <!-- Folder renamed format -->
+    <string name="folder_renamed">Folder renamed to <xliff:g id="name" example="Games">%1$s</xliff:g></string>
+    <!-- Folder name format -->
+    <string name="folder_name_format">Folder: <xliff:g id="name" example="Games">%1$s</xliff:g></string>
+
+    <!-- Debug-only activity name. [DO NOT TRANSLATE] -->
+    <string name="debug_memory_activity">* HPROF</string>
+
+    <!-- Strings for the customization mode -->
+    <!-- Text for widget add button -->
+    <!-- Text for wallpaper change button -->
+    <!-- Text for settings button -->
+    <string name="settings_button_text">Settings</string>
+
+    <!-- Label on an icon that references an uninstalled package, that is going to be installed at some point. [CHAR_LIMIT=15] -->
+    <!-- Label on an icon that references an uninstalled package, that is currently being downloaded. [CHAR_LIMIT=15] -->
+    <!-- Label on an icon that references an uninstalled package, that is currently being installed. [CHAR_LIMIT=15] -->
+    <!-- Label on an icon that references an uninstalled package, for which we have no information about when it might be installed. [CHAR_LIMIT=15] -->
+    <string name="package_state_unknown">Unknown</string>
+    <!-- Label on an icon that references an uninstalled package, for which restore from market has failed. [CHAR_LIMIT=15] -->
+
+    <!-- Button for abandoned promises dialog, that removes all abandoned promise icons. -->
+    <!-- Button for abandoned promises dialog, to removes this abandoned promise icon. -->
+    <string name="abandoned_clean_this">Remove</string>
+    <!-- Button for abandoned promise dialog, to search in the market for the missing package. -->
+    <string name="abandoned_search">Search</string>
+    <!-- Title for abandoned promise dialog. -->
+    <string name="abandoned_promises_title">This app is not installed</string>
+    <!-- Explanation for abandoned promise dialog. "The first 'it' refers to the shortcut icon.
+    The second "it" refers to the app. -->
+    <string name="abandoned_promise_explanation">The app for this icon isn\'t installed.
+        You can remove it, or search for the app and install it manually.
+    </string>
+
+    <string name="wallpaper_load_fail">Couldn\'t load image as wallpaper</string>
+
+
+    <string name = "summary_time_delay">Time delay between 2 successive strokes</string>
+    <string name = "title_enable_multiple_strokes">Enable Multiple Strokes</string>
+    <string name = "title_time_delay">Time Delay</string>
+    <string name = "title_gesture_sensitivity">Gesture Sensitivity</string>
+    <string name = "title_enable_quick_launcher_close">Enable Close</string>
+
+    <string name = "select_action">Select Action</string>
+    <string name = "title_open_app">Open Application</string>
+    <string name = "title_wifi">Wifi</string>
+    <string name = "title_bluetooth">Bluetooth</string>
+    <string name = "title_data_connectivity">Data Connectivity</string>
+    <string name = "title_sync_settings">Sync</string>
+    <string name = "title_sound_settings">Sound</string>
+    <string name = "title_brightness_settings">Brightness</string>
+    <string name = "title_flash_settings">LED Flash</string>
+    <string name = "title_other">Other</string>
+    <string name = "title_gestures_list">Gestures List</string>
+
+
+    <string name = "title_toggle_wifi">Toggle Wifi</string>
+    <string name = "title_turnon_wifi">Turn On Wifi</string>
+    <string name = "title_turnoff_wifi">Turn Off Wifi</string>
+    <string name = "title_open_wifi_settings">Wifi Settings</string>
+
+
+    <string name = "title_toogle_bluetooth">Toggle Bluetooth</string>
+    <string name = "title_turnon_bluetooth">Turn On Bluetooth</string>
+    <string name = "title_turnoff_bluetooth">Turn Off Bluetooth</string>
+    <string name = "title_tmp_bluetooth_visible">Make Bluetooth visible for 2 minutes</string>
+    <string name = "title_open_bluetooth_settings">Bluetooth Settings</string>
+
+
+    <string name = "title_toogle_data">Toggle Data Connectivity</string>
+    <string name = "title_turnon_data">Turn On  Data Connectivity</string>
+    <string name = "title_turnoff_data">Turn Off  Data Connectivity</string>
+    <string name = "title_open_data_settings">Data Connectivity Settings</string>
+
+    <string name = "title_toogle_sync">Toggle Sync</string>
+    <string name = "title_turnon_sync">Turn On  Sync</string>
+    <string name = "title_turnoff_sync">Turn Off  Sync</string>
+    <string name= "title_open_sync_settings">Open Sync Settings</string>
+
+    <string name = "title_toggle_brightness">Toggle Brightness</string>
+    <string name = "title_min_brightness">Minimum Brightness</string>
+    <string name = "title_medium_brightness">Medium Brightness</string>
+    <string name = "title_max_brightness">Maximum Brightness</string>
+    <string name = "title_open_display_settings">Open Display Settings</string>
+
+    <string name = "title_toggle_sound">Toggle Sound Settings</string>
+    <string name = "title_mute_sound">Mute Phone</string>
+    <string name = "title_vibrate_sound">Vibrate Only</string>
+    <string name = "title_normal_sound">Normal mode</string>
+    <string name = "title_open_sound_settings">Open Sound Settings</string>
+
+    <string name = "title_turnon_flash">Turn On  LED Flash</string>
+    <string name = "title_turnoff_flash">Turn Off  LED Flash</string>
+
+
+    <string name = "title_open_gps_settings">Open GPS Settings</string>
+    <string name = "title_open_flightmode_settings">Open Flight mode Settings</string>
+    <string name = "title_open_battery_info">Battery Info</string>
+    <string name = "title_open_file">Open File</string>
+    <string name = "title_tether">Open Tethering &amp; Portable Hotspot</string>
+
+    <string name = "title_open_url">Open URL</string>
+    <string name = "title_call_msg_mail">Call / Message / Email</string>
+
+    <string name="place_holder"></string>
+
+    <string name="signed_in_fmt">Signed in as: %s</string>
+    <string name="signed_in">Whats on your mind? %s</string>
+    <string name="loading">Loading…</string>
+    <string name="signed_out">Signed out</string>
+
+    <string name="default_string">Default</string>
+    <string name="reset_string">Reset</string>
+    <string name="set_string">Set</string>
+    <string name="off_string">Off</string>
+    <string name="error_message_title">Error</string>
+
+    <string name="icon_size_title">Icon size</string>
+
+    <!-- Text for default screen button -->
+    <string name="default_screen_button_text">Default Screen</string>
+
+    <!-- App picker -->
+    <string name="profile_applist_title">Apps</string>
+    <string name="picker_activities">Activities</string>
+    <string name="select_custom_app_title">Select custom app</string>
+    <string name="select_custom_activity_title">Select custom activity</string>
+
+    <!-- Grid Size -->
+    <string name="grid_size_title">Grid size</string>
+    <string name="grid_size_summary">Choose the number of rows/columns</string>
+    <string name="grid_size_rows_title">Rows</string>
+    <string name="grid_size_columns_title">Columns</string>
+
+    <!-- Launcher actions -->
+    <string name="shortcut_picker_title">Sapphire shortcuts</string>
+    <string name="shortcut_action_launcher_apps">Drawer</string>
+    <string name="shortcut_action_launcher_overview">Overview</string>
+    <string name="shortcut_action_launcher_settings">Settings</string>
+    <string name="shortcut_action_launcher_homescreen">Homescreen</string>
+    <string name="shortcut_action_gesture">Gesture Listener</string>
+    <string name="shortcut_action_sdrawer">Slick Drawer</string>
+    <string name="gesture_target_gesture">Gesture Listener</string>
+    <string name="gesture_target_sdrawer">Extended Drawer</string>
+
+    <!-- Color Picker -->
+    <string name="dialog_color_picker">Color Picker</string>
+    <string name="press_color_to_apply">Press on color below to apply</string>
+    <string name="arrow_right" translatable="false">→</string>
+    <string name="hex">Hex:</string>
+    <string name="hex_hint" translatable="false">#ff000000</string>
+
+    <!-- Sort mode -->
+    <string name="drawer_sort_mode_title">Sort mode</string>
+    <string name="sort_mode_title">Title</string>
+    <string name="sort_mode_launch_count">Launch count</string>
+    <string name="sort_mode_install_time">Install time</string>
+
+    <!-- General Settings -->
+    <string name="notification_badges_title">Notification badges</string>
+    <string name="notification_badges_summary">Display notification counts on app icon</string>
+    <string name="notification_badge_warning_message">You need to grant Sapphire UI permission to do this so lets proceed.</string>
+    <string name="lock_workspace_title">Lock homescreen</string>
+    <string name="lock_workspace_summary">Lock shortcuts and folders positions in the homescreen, dock and apps and widgets drawer.</string>
+    <string name="workspace_locked">Homescreen is locked, unlock in settings to rearrange.</string>
+
+    <!-- Homescreen Settings -->
+    <string name="show_shadow_title">Show shadow</string>
+    <string name="show_shadow_summary">Most noticeable on light wallpapers</string>
+
+    <!-- Hide icon labels -->
+    <string name="hide_icon_labels_title">Hide icon labels</string>
+    <string name="hide_icon_labels_drawer_summary">Hide icon labels in drawer</string>
+    <string name="hide_icon_labels_homescreen_summary">Hide icon labels on homescreen</string>
+    <string name="hide_icon_labels_dock_summary">Hide icon labels in dock</string>
+
+    <!-- Drawer Settings -->
+    <string name="drawer_style_title">Drawer style</string>
+    <string name="drawer_style_paged">Horizontal Paged</string>
+    <string name="drawer_style_vertical">Vertical Simple</string>
+    <string name="drawer_style_vertical_folder">Vertical Alphabetical</string>
+    <string name="drawer_background_title">Drawer background color</string>
+
+    <!-- Dock Settings -->
+    <string name="dock_icons_title">Dock icons</string>
+    <string name="dock_icons_summary">Number of icons in the dock</string>
+
+    <!-- Folder Settings -->
+    <string name="folder_background_color_title">Background Color</string>
+    <string name="folder_icon_text_color_title">Icon text color</string>
+    <string name="folder_preview_color_title">Preview color</string>
+    <string name="hide_folder_name_title">Hide folder name</string>
+    <string name="hide_folder_name_summary">When a folder is open do not show its name</string>
+    <string name="smart_folder_summary_one">Swipe - launch first app \nTouch - open folder</string>
+    <string name="smart_folder_summart_two">Swipe - open folder \nTouch - launch first app</string>
+    <string name="scrolling_folders_title">Scrolling folders</string>
+
+    <!-- Gestures & Buttons -->
+    <string name="buttons_title">Buttons</string>
+    <string name="home_button_title">Home button</string>
+    <string name="home_button_default_title">Only on default home screen</string>
+    <string name="home_button_default_summary">Press Home button once for default screen, then again for action</string>
+    <string name="back_button_title">Back button</string>
+    <string name="menu_button_title">Menu button</string>
+    <string name="gesture_default">nothing</string>
+    <string name="gestures_left_up_gesture_title">Swipe up left</string>
+    <string name="gestures_middle_up_gesture_title">Swipe up middle</string>
+    <string name="gestures_right_up_gesture_title">Swipe up right</string>
+    <string name="gestures_left_down_gesture_title">Swipe down left</string>
+    <string name="gestures_middle_down_gesture_title">Swipe down middle</string>
+    <string name="gestures_right_down_gesture_title">Swipe down right</string>
+    <string name="gestures_pinch_gesture_title">Pinch</string>
+    <string name="gestures_spread_gesture_title">Spread</string>
+    <string name="gestures_double_tap_gesture_title">Double tap</string>
+
+    <string name="gesture_target_nothing">Nothing</string>
+    <string name="gesture_target_homescreen">Go to default homescreen</string>
+    <string name="gesture_target_drawer">Open app drawer</string>
+    <string name="gesture_target_previews">Show previews</string>
+    <string name="gesture_target_settings">Open launcher settings</string>
+    <string name="gesture_target_custom">Custom</string>
+
+
+    <!-- Icon Pack  -->
+    <string name="dialog_pick_iconpack_title">Select Icon Pack</string>
+    <string name="default_iconpack_title">Default</string>
+
+    <!-- Hidden apps -->
+    <string name="hidden_apps_title">Hidden apps</string>
+    <string name="hidden_apps_summary">Hide apps from the drawer</string>
+
+    <string name="reset_title">Reset Sapphire UI</string>
+    <string name="reset_summary">Clears Sapphire UI user data, settings, user login and restarts</string>
+
+    <string name="feedback_title">Send Feedback</string>
+    <string name="feedback_summary">In the following screen, please input a subject of concern and write up a small email to the developer of Sapphire UI. The key subjects are General Feedback, Request, and Questions concerning your Sapphire UI Experience. Please do not spam. Use the User Feedback Program seriously.</string>
+
+    <string name="hangout">Start Hangout</string>
+    <string name="search_view_hint">Explore Apps</string>
+    <string name="launch">Launch</string>
+    <string name="appmenu_launch">Launch</string>
+    <string name="appmenu_info">App information</string>
+    <string name="appmenu_onplaystore">Find on Play Store</string>
+    <string name="page">Page</string>
+    <string name="config_wallpaper_download_loc">Wallpaper Downloads</string>
+    <string name="config_wallpaper_sdcard_dl_location">SDcard Wallpaper Downloads</string>
+
+    <string name="status_date_format">EEE, d MMMM</string>
+    <string name="accessibility_battery_level">Battery <xliff:g id="number" example="100">%d</xliff:g> percent.</string>
+    <string name="batterymeter_very_low_overlay_symbol" translatable="false">!</string>
+    <string name="batterymeter_precise" translatable="false"><xliff:g id="number" example="100">%d</xliff:g>%%</string>
+    <string name="email">Send Email</string>
+    <string name="retrieve_item">Retrieving items…</string>
+    <string name="noti_gesture">Gesture</string>
+    <string name="label_icon">Icon</string>
+
+    <string name="creating_activity_shortcut">Creating activity shortcut for %s</string>
+    <string name="creating_application_shortcut">Creating application shortcut for %s</string>
+    <string name="error">Error</string>
+    <string name="context_action_launch">Launch Activity</string>
+    <string name="context_action_shortcut">Create Shortcut</string>
+    <string name="context_action_edit">Edit Shortcut</string>
+    <string name="starting_application">Starting application: %s</string>
+    <string name="error_tasks">Error loading list</string>
+    <string name="dialog_progress_loading">Please Wait…</string>
+    <string name="title_dialog_icon_picker">Choose Icon</string>
+    <string name="error_icons">Error loading icon cache…</string>
+    <string name="label_name">Name</string>
+    <string name="label_package">Package</string>
+    <string name="label_class">Class</string>
+    <string name="error_invalid_icon_resource">Error: invalid icon resource</string>
+    <string name="error_invalid_icon_format">Error: invalid icon format</string>
+    <string name="shortcut_dialog">Long click on an activity to access the item menu. You can than generate a shortcut, launch, or edit the activity chosen from the list. This shortcut utility is relatively new and a work in progress. Icons that can be chosen in the editor are generated from installed applications on your device.</string>
+    <string name="slide_policy_demo_error">Oops, We can\'t continue unless you agree to terms of conditions</string>
+    <string name="buttons_dialog">Use these tweaks to add hidden shortcuts and commands to your launcher workspace. Customize your buttons for quick actions.</string>
+
+    <string name="donation_title">Support The Project</string>
+    <string name="donation_summary">The Sapphire Launcher Project request that you take the time to review your experience on Google Play and consider donating to the project by purchasing a License. A license will null out this notification further more. Thankyou for using Sapphire Launcher!</string>
+    <string name="donation_cancel">Not today</string>
+    <string name="util">Settings</string>
+    <string name="gen">General</string>
+    <string name="util_more_title">Utilities</string>
+    <string name="util_more_summary">The basic launcher settings for users to start out with. Adjust color schemes, apply icon packs, pick a wallpaper, and adjust desktop user interaction.</string>
+    <string name="core_more_title">Core Usage</string>
+    <string name="core_more_summary">Core or Application usage is defined as menu items that relate to how the application is launched, managed or used by the user. Clear or Reset data usage by Sapphire Launcher. Set the default launcher provider, manage the assist provider or restart setup. These menu items can be used to troubleshoot bugs as well.</string>
+    <string name="workspace_more_title">Launcher Workspace</string>
+    <string name="workspace_more_summary">Express how you feel by customization and design with your launcher workspace. Manage tweaks to your desktop grid, overscroll effects, dock, folders and application drawers. There is plenty of native settings to choose from so don\'t be shy to experiment.</string>
+    <string name="imers_more_title">Immersive Widgets</string>
+    <string name="imers_more_summary">Immersive widgets are customizable modules that apply to your desktop workspace that make it alittle more advanced. Use them to your advantage to make task easier or to build a complex desktop. The Immersive Search Bar allows for immediate search on Google Now and has a few toggleable buttons. The Extended Home Screen is an interactive extra screen that acts as a converged app drawer and mini homescreen.</string>
+    <string name="instant">Google Instant Share</string>
+    <string name="show_dock">Enable Dock</string>
+    <string name="info">More Info</string>
+    <string name="papers">Wallpapers</string>
+    <string name="usage">Usage</string>
+    <string name="manage">Manage Home Launchers</string>
+    <string name="set_home">Set Default Home</string>
+    <string name="restart_launch">Restart Launcher</string>
+    <string name="reset_launch">Reset Launcher</string>
+    <string name="set_tap">Set Default On-Tap</string>
+    <string name="intro">Introduction</string>
+    <string name="workspace">Launcher Workspace</string>
+    <string name="homescreen">Homescreen</string>
+    <string name="dock">Dock</string>
+    <string name="drawer">Drawer</string>
+    <string name="folders">Folders</string>
+    <string name="immersive">Immersive</string>
+    <string name="extnd_home">Extended Homescreen</string>
+    <string name="searchBar">Search Bar</string>
+    <string name="extras"><![CDATA[Downloads & Purchases]]></string>
+    <string name="back">Back</string>
+    <string name="next">Next</string>
+    <string name="confirm">Confirm before action</string>
+    <string name="wa">Widgets and Apps</string>
+    <string name="recom">Recommended for you!</string>
+    <string name="more">More</string>
+    <string name="show">Do not show again</string>
+    <string name="dev">Developer Picks</string>
+    <string name="products">More Products by GSD</string>
+    <string name="welcome">Hi There!</string>
+    <string name="setup">Lets get you setup!</string>
+    <string name="longpress">Longpress on your desktop to bring up the launcher menu actions.</string>
+    <string name="ehs">Use the launcher settings to create a unique desktop experience to help you get through your day. Create shortcusts, gestures, add an extended homescreen for quick app access and add an icon pack for personalization!</string>
+    <string name="express">Express your feelings and personality with the tools provided to create a simple or complex homescreen.</string>
+    <string name="oem">Don\'t let your oem be in control of your homescreen. Let\'s be together but not the same!</string>
+    <string name="cont">Go!</string>
+    <string name="category">Category</string>
+    <string name="choose">Choose Category</string>
+    <string name="packs">Icon Packs</string>
+    <string name="favs">Community Favorites</string>
+    <string name="complete">Setup Complete</string>
+    <string name="completed">Your all set to rock and roll! If you have any questions, concerns, or comments; Join the Sapphire Launcher Google Plus Group and speak up!</string>
+    <string name="launcher_intro">The Customizeable Google Powered Experience innovated by google users all around</string>
+    <string name="launcher_warning">By using SUI, I Consent to allow permission for SUI to gain access to my devices internal memory and google plus data.</string>
+    <string name="launcher_web">For more information on SUI Permissions, visit Gocalsd.weebly.com</string>
+    <string name="powered">POWERED BY GOOGLE</string>
+    <string name="powered_info"><![CDATA[This launcher is powered by google services and to enjoy the best of it you&apos;ll need to login to get unlocked features like Google Plus Instant Post]]></string>
+    <string name="permissions">PERMISSIONS</string>
+    <string name="perm_info">Sapphire Launcher needs to gain access to a few permissions in order to continue installation. This experience will require access to your Internal Memory to save gestures, cache data, and to store google json data.</string>
+    <string name="gest_info">Gestures need access to your phone application to make shortcuts.</string>
+    <string name="home_dock">Homescreen Dock</string>
+    <string name="dock_bkgn">Dock Background</string>
+    <string name="home_drawer">Homescreen Drawer</string>
+    <string name="ehs_pref">Extended Home Drawer</string>
+    <string name="ehs_info">Enables an extra panel to your workspace screens to the most left side of your screen. This panel contains an immersive app drawer.</string>
+    <string name="enable_ehs">Enable Service</string>
+    <string name="page_set">Page Settings</string>
+    <string name="iss">Icon Scaleing</string>
+    <string name="iss_info">Increasing this number will fix the grainy look on Phablets and Tablets</string>
+    <string name="ehs_drawer">EHS Drawer Background</string>
+    <string name="ab_background">Actionbar Background</string>
+    <string name="app_text">Main Text Color</string>
+    <string name="search_active">Active Search Primary</string>
+    <string name="ua_search">Unactive Search Secondary</string>
+    <string name="panel">My Panel</string>
+    <string name="clock_text">Clock Widget</string>
+    <string name="date_text">Date Widget</string>
+    <string name="alarm_text">Next Alarm Widget</string>
+    <string name="home_folders">Homescreen Folders</string>
+    <string name="swipe_support">Toggle Swipe</string>
+    <string name="scheme">Color Scheme</string>
+    <string name="unlock_info">Allows you to change the color of your Statusbar and Navbar in your workspace</string>
+    <string name="unlock_title">Unlock SystemUI</string>
+    <string name="home_apply">Press Home to apply changes</string>
+    <string name="statusbar">Statusbar</string>
+    <string name="nav">Navigation Bar</string>
+    <string name="dark_info">Inverts the statusbar color but only available in android 6.0+</string>
+    <string name="dark_status">Dark Statusbar</string>
+    <string name="basic">Google Preferences</string>
+    <string name="goo_info">Just here for settings registry reasons…For further information and preferences, check your google settings.</string>
+    <string name="goo_hot">Google Hotword</string>
+    <string name="goo_set_info">The Playstore automatically is set to create shortcuts of newly installed applications on your desktop. Didn\'t know that did you.</string>
+    <string name="goo_set">Google Settings</string>
+    <string name="basic_util">Utilities</string>
+    <string name="simple_info">A 2nd Home Activity that enables a simple interface for users wanting an easy homescreen or for battery savings. Does not have widget capability. Switch via Default Home option in main settings.</string>
+    <string name="simple_title">Disable Simple Mode</string>
+    <string name="task_info">Toggle to show All Apps or System Apps in Shortcut Maker</string>
+    <string name="task_title">Activities Filter</string>
+    <string name="navbar">Navbar</string>
+    <string name="navbar_note">Notice: Custom home key binding may not work on firmware that is heavily skinned or modified. It is in good practice to not mod the Home key. In general be cautious.</string>
+    <string name="unlock_nav">Unlock Navigation Bar</string>
+    <string name="unlock_nav_info">Allows you to set commands to the Navbar Buttons</string>
+    <string name="sketch_gest">Sketch Gestures</string>
+    <string name="create_sketch">Draw Sketch</string>
+    <string name="current_sketches">My Sketches</string>
+    <string name="sketch_setting">Sketch Settings</string>
+    <string name="simple_gest">Simple Gestures</string>
+    <string name="simple_gest_info">Simple Gestures are swiping gestures. Use your thumb and index finger to complete the fling after creating a shortcut below.</string>
+    <string name="snack_donation">Have you considered supporting Sapphire Launcher?</string>
+    <string name="donate">Donate</string>
+    <string name="snack_support">Buy a premium license and be set for future upgrades!</string>
+    <string name="page_ind">Page Indicators</string>
+    <string name="show_chevronbar">ChevronBar</string>
+    <string name="chevronbar_summary">Adds an Android N like clickable bar above the app dock. An all apps button replacement.</string>
+    <string name="drywall_notice">Drywall Service Notice</string>
+    <string name="drywall_summary">A new wallpaper service has recently been developed by GSD and now powers the wallpaper service provider in Sapphire. Would you like to download and install now?</string>
+    <string name="search_radius">Searchbar Corner Radius</string>
+    <string name="search_radius_info">Set the corner radius to the Sapphire Searchbar</string>
+    <string name="decline">Decline</string>
+    <string name="accept">Accept</string>
+    <string name="sapphire">Welcome and Thankyou for using Sapphire Launcher!</string>
+    <string name="welcome_text">Before I let you start using Sapphire, there are a few things we need to go over and let you know for security and data safety!</string>
+    <string name="eula_legal_text">Your use of this application is governed by:\n\na) the Google Terms of Service (www.google.com/policies/terms);\nb) GocalSD\'s Privacy Policy (www.gocalsd.weebly.com/privacy); and\nc) any applicable Google service-specific terms of service or privacy policies.\n\nGoogle\'s terms of service and privacy policies may be updated from time to time and without notice. GocalSD will inform users of any changes via notifications and the social network groups!\n\nThis application collects certain information as you use it, including via Google Analytics. GocalSD\'s Privacy Policy explains how it treats your information and protects your privacy when you use the application. By using the application, you agree to the use of your data in accordance with GSD\'s Privacy Policy.</string>
+    <string name="what_is_sapphire">What is Sapphire Launcher?</string>
+    <string name="what_body_text">Sapphire Launcher was created several years ago as a homework experiment for college and for a rom that never came to be. Since than, the launcher has grown much more than what it was ever meant to be along with the communities that support it and the contributing developer!</string>
+    <string name="what_two_body_text">This launcher was built off of the source code of Googles Launcher3 from Android 5.0 of which allowed many unlocked potential features like personalization, themeing, color schemes, gestures, and more! If ever encounter an issue or anything fishy, please contact the developer or post on the social groups! We are here to help! We also take suggestions and feedback!</string>
+    <string name="what_three_body_text">GocalSD has put alot of time and effort into development of Sapphire Launcher and as a user you will notice messages to consider purchasing a license key. These keys will not benifit you to anything in the launcher but all revenue is put towards equipment, updates and more! All revenue goes back to the community in some way. One of these ways has already been announced as Sapphire Launchers sequal is already in development and scheduled for a release sometime in 2017!</string>
+    <string name="last_word">Finally!</string>
+    <string name="end_body_text">As the developer of Sapphire Launcher, I hope you enjoy your time with this launcher and hope it helps you in some way. As such, I expect the same back. Positive ratings are always welcomed on Google Play!</string>
+    <string name="end_two_body_text">If your ready to take on Sapphire Launcher as your customizeable launcher experience. Please continue forward by clicking below. I will not bore you with a tuturial of any sort. I expect you know what todo next...</string>
+    <string name="end_three_body_text">Regards, GocalSD www.gocalsd.weebly.com</string>
+    <string name="welcome_text_two">Sapphire Launcher nor GocalSD collects, sells, or monitors your data in any way. The data we can see is the same information that can be seen publicly on your Google Account or on Google Plus. Google Login is not required for use of Sapphire Launcher howevor it does help GSD collect information regarding crashes, freezes and hickups with your firmware via the Google Play Console. It is very important to us to continue development in a positive manner which includes stomping as many bugs as possible and getting you 110% performance. All bug reports sent are either collected by a personal Email or the Google Play Console of which is taken seriously. ALL RETURNS follow the Google Play Policy of which after a 24hr period, you cannot gain a refund of a License purchase. All purchases are used as revenue to continue development and push more updates. Without a revenue, projects may cease to exist and have no reason to continue without a community backing. Thankyou for your time and understanding as alot of time and effort has been put forth.</string>
+    <string name="permission">Permissions</string>
+    <string name="what_permissions">We need to enable some permissions here to allow some features of Sapphire Launcher to work correctly. If you decline them, Gestures and Performance may be affected and cause problems, madness, and other things I wish not to speak of that may anger you so we suggest to allow them to pass! Thankyou!</string>
+
+</resources>

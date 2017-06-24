@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <Preference
+        android:layout="@layout/customization_header"/>
+
+    <com.NxIndustries.Sapphire.preference.MaterialPreference
+        android:title="@string/home_folders"/>
+
+    <net.margaritov.preference.colorpicker.ColorPickerPreference
+        android:key="folder_background_color"
+        android:title="@string/folder_background_color_title"
+        android:defaultValue="0xffffffff" />
+
+    <net.margaritov.preference.colorpicker.ColorPickerPreference
+        android:key="folder_icon_text_color"
+        android:title="@string/folder_icon_text_color_title"
+        android:defaultValue="@color/folder_items_text_color" />
+
+    <net.margaritov.preference.colorpicker.ColorPickerPreference
+        android:key="folder_preview_color"
+        android:title="@string/folder_preview_color_title"
+        android:defaultValue="0x71ffffff" />
+
+    <SwitchPreference
+        android:key="scrolling_folders"
+        android:title="@string/scrolling_folders_title"
+        android:defaultValue="false" />
+
+    <SwitchPreference
+        android:key="hide_folder_name"
+        android:title="@string/hide_folder_name_title"
+        android:summary="@string/hide_folder_name_summary"
+        android:defaultValue="false" />
+
+    <ListPreference
+        android:key="smart_folder"
+        android:title="@string/swipe_support"
+        android:entries="@array/smart_folder_entries"
+        android:entryValues="@array/smart_folder_values" />
+
+</PreferenceScreen>

@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/appmenu_launch"
+        android:title="@string/appmenu_launch"
+        />
+
+    <item
+        android:id="@+id/appmenu_info"
+        android:title="@string/appmenu_info"
+        />
+
+    <item
+        android:id="@+id/appmenu_onplaystore"
+        android:title="@string/appmenu_onplaystore"
+        />
+</menu>

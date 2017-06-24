@@ -1,0 +1,78 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        Ryan {
+            keyAlias 'Biotic'
+            keyPassword 'frisky09'
+            storeFile file('/home/ry/workspace/Biotic')
+            storePassword 'frisky09'
+        }
+    }
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+    defaultConfig {
+        applicationId "com.NxIndustries.Sapphire"
+        minSdkVersion 21
+        targetSdkVersion 25
+        multiDexEnabled true
+        versionCode 220
+        versionName "12.20.5"
+        project.ext.set("archivesBaseName", "Sapphire-" +
+                defaultConfig.versionName)
+        signingConfig signingConfigs.Ryan
+    }
+    lintOptions {
+        abortOnError false
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.Ryan
+        }
+        debug {
+            debuggable true
+            signingConfig signingConfigs.Ryan
+        }
+    }
+}
+
+
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:appcompat-v7:25.1.1'
+    compile 'com.android.support:support-v4:25.1.1'
+    compile 'com.android.support:support-v13:25.1.1'
+    compile 'com.android.support:recyclerview-v7:25.1.1'
+    compile 'com.android.support:design:25.1.1'
+    compile 'com.android.support:cardview-v7:25.1.1'
+
+    compile 'com.google.android.gms:play-services-auth:10.0.1'
+    compile 'com.google.android.gms:play-services-plus:10.0.1'
+    compile 'com.google.firebase:firebase-appindexing:10.0.1'
+    compile 'com.android.support:multidex:1.0.1'
+
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'com.flaviofaria:kenburnsview:1.0.6'
+    compile 'de.psdev.licensesdialog:licensesdialog:1.8.0'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.github.paolorotolo:appintro:4.1.0'
+    compile 'com.github.clans:fab:1.6.2'
+    compile 'com.github.gabrielemariotti.cards:library:1.9.1'
+    compile 'com.commit451:elasticdragdismisslayout:1.0.2'
+    compile 'com.cocosw:bottomsheet:1.+@aar'
+    compile 'com.drivemode:TypefaceHelper:1.2.0@aar'
+    compile 'com.github.rampo.updatechecker:library:2.1.8'
+    compile 'cat.ereza:customactivityoncrash:1.5.0'
+    compile 'com.github.castorflex.verticalviewpager:library:19.0.1'
+    compile 'com.koushikdutta.ion:ion:2.+'
+    compile 'com.makeramen:roundedimageview:2.2.1'
+
+    compile 'com.mikepenz:fastadapter:1.4.1@aar'
+    compile 'com.mikepenz:iconics-core:2.5.11@aar'
+    compile('com.mikepenz:materialdrawer:5.6.0@aar') {
+        transitive = true
+    }
+}

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/action_1" android:title="Personalization"
+        android:orderInCategory="3" android:showAsAction="never" />
+    <item android:id="@+id/action_2" android:title="Goople Login"
+        android:orderInCategory="3" android:showAsAction="never" />
+    <item android:id="@+id/action_3" android:title="Manage Applications"
+        android:orderInCategory="3" android:showAsAction="never" />
+    <item android:id="@+id/action_4" android:title="System Settings"
+        android:orderInCategory="3" android:showAsAction="never" />
+</menu>

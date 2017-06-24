@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:launcher="http://schemas.android.com/apk/res-auto">
+
+    <Preference
+        android:layout="@layout/immersive_header"/>
+
+        <com.NxIndustries.Sapphire.preference.MaterialPreference
+            android:title="Sapphire Search Bar"/>
+
+    <SwitchPreference
+            android:key="show_search_bar"
+            android:title="Enable Widget Service"
+            android:defaultValue="false" />
+    <Preference
+            android:summary="Add an immersive Search Widget to your workspace. Warning: Since being a stand alone view, you need to Apply the changes before they will be noticed."
+            android:selectable="false"/>
+    <Preference
+        android:key="apply"
+        android:title="Apply changes"
+        android:summary="Restarts the launcher and refreshes the Search Widget State" />
+
+    <net.margaritov.preference.colorpicker.ColorPickerPreference
+        android:key="widget_background"
+        android:title="Widget Background"
+        android:defaultValue="@color/widget_color"
+        android:dependency="show_search_bar"/>
+
+    <net.margaritov.preference.colorpicker.ColorPickerPreference
+        android:key="search_text_color"
+        android:title="Search Text Color"
+        android:defaultValue="@color/white"
+        android:dependency="show_search_bar"/>
+
+    <net.margaritov.preference.colorpicker.ColorPickerPreference
+        android:key="search_hinttext_color"
+        android:title="Search Hint Text Color"
+        android:defaultValue="@color/white"
+        android:dependency="show_search_bar"/>
+
+    <com.NxIndustries.Sapphire.preference.SeekBarDialogPreference
+        android:key="search_radius"
+        android:title="@string/search_radius"
+        android:summary="@string/search_radius_info"
+        launcher:max="32"
+        launcher:min="0"
+        launcher:defaultValue="8" />
+
+    <com.NxIndustries.Sapphire.preference.CardCategory />
+
+        <CheckBoxPreference
+            android:key="show_apps"
+            android:title="Show AppDrawer Button"
+            android:summary="Binded to Slick Drawer"
+            android:defaultValue="false"/>
+        <net.margaritov.preference.colorpicker.ColorPickerPreference
+            android:key="apps_color"
+            android:title="All Apps Button Color"
+            android:defaultValue="@color/white"
+            android:dependency="show_search_bar"/>
+        <com.NxIndustries.Sapphire.preference.CardCategory />
+
+        <CheckBoxPreference
+            android:key="show_voice"
+            android:title="Show Google Voice Input"
+            android:defaultValue="true"/>
+        <net.margaritov.preference.colorpicker.ColorPickerPreference
+            android:key="voice_color"
+            android:title="Voice Button Color"
+            android:defaultValue="@color/white"
+            android:dependency="show_search_bar"/>
+        <com.NxIndustries.Sapphire.preference.CardCategory />
+
+        <CheckBoxPreference
+            android:key="show_menu"
+            android:title="Show Menu Button"
+            android:summary="Click for Launcher Settings, LongClick for Popup Menu"
+            android:defaultValue="false"/>
+        <net.margaritov.preference.colorpicker.ColorPickerPreference
+            android:key="menu_color"
+            android:title="Menu Button Color"
+            android:defaultValue="@color/white"
+            android:dependency="show_search_bar"/>
+
+</PreferenceScreen>

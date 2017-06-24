@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    android:gravity="center">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        app:cardElevation="0dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    app:srcCompat="@color/accent"
+                    android:id="@+id/banner_one"
+                    android:scaleType="centerCrop"
+                    android:layout_height="175dp" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:layout_height="45dp"
+                    android:id="@+id/name_holder"
+                    android:layout_gravity="bottom">
+
+                    <TextView
+                        android:text="Ryan Gocal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:textStyle="normal|bold"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:layout_height="175dp">
+
+                    <com.makeramen.roundedimageview.RoundedImageView
+                        app:riv_border_width="2dp"
+                        app:riv_border_color="@color/white"
+                        app:riv_oval="true"
+                        app:riv_corner_radius="30dp"
+                        android:id="@+id/avatar_one"
+                        android:layout_height="72dp"
+                        android:layout_marginTop="12dp"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@mipmap/ic_launcher"
+                        android:layout_width="72dp" />
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="6dp">
+
+                <TextView
+                    android:text="Founder of GocalSD Android Group. Father of three, Android Enthusiast|Coder|Styler|Hacker, specialize in electronics."
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textStyle="normal|bold"
+                    android:padding="8dp" />
+
+                <TextView
+                    android:text="Email: rgocal09@gmail.com"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textStyle="normal|bold"
+                    android:padding="2dp"
+                    android:autoLink="email" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:layout_width="385dp">
+
+                <LinearLayout
+                    android:background="?attr/selectableItemBackground"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:clickable="true"
+                    android:id="@+id/ry_website">
+
+                    <TextView
+                        android:text="Website"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/blue" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:background="?attr/selectableItemBackground"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:clickable="true"
+                    android:id="@+id/ry_gplay">
+
+                    <TextView
+                        android:text="Google Play"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/blue" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:background="?attr/selectableItemBackground"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:clickable="true"
+                    android:id="@+id/ry_twitter">
+
+                    <TextView
+                        android:text="Twitter"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/blue" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:background="?attr/selectableItemBackground"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:clickable="true"
+                    android:id="@+id/ry_gplus">
+
+                    <TextView
+                        android:text="Google +"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/blue" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

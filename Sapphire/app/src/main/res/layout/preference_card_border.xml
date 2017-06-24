@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="12dp"
+              android:background="?attr/preferenceactivity_cardIdleBackground" >
+
+    <View
+        android:id="@+id/bottom"
+        android:layout_gravity="top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/settings_card_shadow_bottom"/>
+
+    <View
+        android:id="@+id/top"
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:background="@drawable/settings_card_shadow_top"/>
+</FrameLayout>

@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="library-2.1.8">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.github.rampo.updatechecker/library/2.1.8/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.github.rampo.updatechecker/library/2.1.8/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.rampo.updatechecker/library/2.1.8/c30b35b1b97abfe6ae81f3c2de9d41afcc006161/library-2.1.8-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.NxIndustries.Sapphire.SearchDropTargetBar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="false"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/drag_target_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:baselineAligned="false">
+
+        <FrameLayout
+            style="@style/DropTargetButtonContainer"
+            android:layout_weight="1" >
+            <com.NxIndustries.Sapphire.DeleteDropTarget
+                android:id="@+id/delete_target_text"
+                style="@style/DropTargetButton"
+                android:text="@string/delete_zone_label_workspace" />
+        </FrameLayout>
+
+        <FrameLayout
+            style="@style/DropTargetButtonContainer"
+            android:layout_weight="1" >
+            <com.NxIndustries.Sapphire.InfoDropTarget
+                android:id="@+id/info_target_text"
+                style="@style/DropTargetButton"
+                android:text="@string/info_target_label" />
+        </FrameLayout>
+    </LinearLayout>
+
+</com.NxIndustries.Sapphire.SearchDropTargetBar>

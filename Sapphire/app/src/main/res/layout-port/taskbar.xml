@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/s_badge"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <SearchView
+        android:id="@+id/searchView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/mask_ripple"
+        android:inputType="text"
+        android:maxLines="1"
+        android:textColorHint="@color/white"
+        android:textSize="18sp"
+        android:focusable="false"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/buttons"
+        android:searchIcon="@drawable/empty"
+        android:searchHintIcon="@drawable/empty">
+    </SearchView>
+
+    <LinearLayout
+        android:id="@+id/buttons"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true">
+
+        <ImageButton
+        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        android:id="@+id/voice"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_google_voice"
+        android:tint="@color/white" />
+
+        <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/allApps"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_home_all_apps_holo_dark"
+        android:tint="@color/white"
+        android:padding="2dp" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/action_button"
+            android:background="@android:color/transparent"
+            android:tint="@color/white"
+            android:padding="2dp"
+            android:src="@drawable/ic_more_vert_white_24dp" />
+    </LinearLayout>
+    </RelativeLayout>

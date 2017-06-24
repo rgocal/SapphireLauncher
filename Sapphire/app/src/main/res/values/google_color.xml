@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="quantum_amber200">#ffffe082</color>
+    <color name="quantum_amber300">#ffffd54f</color>
+    <color name="quantum_amber500">#ffffc107</color>
+    <color name="quantum_amber700">#ffffa000</color>
+    <color name="quantum_amber800">#ffff8f00</color>
+    <color name="quantum_amber900">#ffff6f00</color>
+    <color name="quantum_bluegrey100">#ffcfd8dc</color>
+    <color name="quantum_bluegrey200">#ffb0bec5</color>
+    <color name="quantum_bluegrey300">#ff90a4ae</color>
+    <color name="quantum_bluegrey400">#ff78909c</color>
+    <color name="ripple_material_dark">#33ffffff</color>
+    <color name="ripple_material_light">#1f000000</color>
+    <color name="secondary_text_default_material_dark">#b3ffffff</color>
+    <color name="secondary_text_default_material_light">#8a000000</color>
+    <color name="secondary_text_disabled_material_dark">#36ffffff</color>
+    <color name="secondary_text_disabled_material_light">#24000000</color>
+
+</resources>

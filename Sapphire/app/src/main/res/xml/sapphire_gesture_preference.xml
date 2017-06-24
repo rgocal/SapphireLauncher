@@ -1,0 +1,52 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:launcher="http://schemas.android.com/apk/res-auto"
+    android:key="app_preferencescreen">
+
+    <Preference
+        android:layout="@layout/sketch_header" />
+
+    <com.NxIndustries.Sapphire.preference.MaterialPreference
+        android:title="Gesture Settings"/>
+
+    <CheckBoxPreference
+        android:key="keyChkEnableMultipleStroke"
+        android:summary="Enable multiple strokes"
+        android:title="@string/title_enable_multiple_strokes" >
+    </CheckBoxPreference>
+
+    <com.NxIndustries.Sapphire.preference.SeekBarDialogPreference
+        android:key="keyWaitTime"
+        android:title="@string/title_time_delay"
+        launcher:max="10"
+        launcher:min="0"
+        launcher:defaultValue="1" />
+
+    <com.NxIndustries.Sapphire.preference.SeekBarDialogPreference
+        android:key="keyGestureSensitivity"
+        android:title="@string/title_gesture_sensitivity"
+        launcher:max="10"
+        launcher:min="1"
+        launcher:defaultValue="2" />
+
+    <CheckBoxPreference
+        android:key="keyChkQuitAferLaunching"
+        android:summary="Dispose gesture drawing screen after a successful gesture"
+        android:title="@string/title_enable_quick_launcher_close" >
+    </CheckBoxPreference>
+
+    <net.margaritov.preference.colorpicker.ColorPickerPreference
+        android:key="gesture_background"
+        android:title="Gesture Background"
+        android:summary="Select a tracing color"
+        android:defaultValue="@color/blue"/>
+
+    <Preference
+        android:key="keyPrefGest"
+        android:title="Gesture Listener"
+        android:summary="Gestures on demand">
+        <intent
+            android:targetPackage="com.NxIndustries.Sapphire"
+            android:targetClass="com.NxIndustries.Sapphire.gesture.GestureQuickLaunch"/>
+    </Preference>
+
+</PreferenceScreen>

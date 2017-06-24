@@ -1,0 +1,61 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/masterLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/customActionBar"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_alignParentBottom="true">
+
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@drawable/mask_ripple"
+            android:ellipsize="end"
+            android:ems="10"
+            android:hint="@string/search_view_hint"
+            android:imeOptions="actionGo"
+            android:inputType="text"
+            android:maxLines="1"
+            android:textColor="@android:color/black"
+            android:textColorHint="@color/white"
+            android:textSize="18sp"
+            android:focusable="false"
+            android:drawableTint="@color/white"
+            android:gravity="center"
+            android:layout_marginBottom="48dp">
+        </EditText>
+
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_above="@+id/customActionBar">
+        <GridView
+            android:id="@+id/appsContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:choiceMode="singleChoice"
+            android:columnWidth="58dp"
+            android:horizontalSpacing="16dp"
+            android:numColumns="auto_fit"
+            android:stretchMode="columnWidth"
+            android:scrollbars="none"
+            android:verticalSpacing="16dp"
+            android:clickable="true"
+            android:gravity="center|fill"
+            android:layout_marginTop="18dp"
+            android:animateLayoutChanges="true"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp" />
+    </LinearLayout>
+
+</RelativeLayout>

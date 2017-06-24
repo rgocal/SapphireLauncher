@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.NxIndustries.Sapphire.layout.AnimatedView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="6dp">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="6dp"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/headline"
+                android:text="Headline"
+                android:padding="3dp"
+                android:fontFamily="sans-serif-bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="3dp"
+                android:tint="@color/quantum_amber900"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:drawableTop="@drawable/ic_view_sapphire" />
+
+            <TextView
+                android:id="@+id/text"
+                android:text="body"
+                android:padding="3dp"
+                android:fontFamily="sans-serif-bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="2dp"
+                android:tint="@color/quantum_amber800"
+                android:autoLink="web|email" />
+
+            <TextView
+                android:id="@+id/date"
+                android:text="date"
+                android:padding="3dp"
+                android:fontFamily="sans-serif-bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingBottom="5dp"
+                android:textSize="12sp"
+                android:textStyle="italic"
+                android:typeface="sans"
+                android:tint="@color/quantum_amber300" />
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</com.NxIndustries.Sapphire.layout.AnimatedView>

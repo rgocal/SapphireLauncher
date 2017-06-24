@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.NxIndustries.Sapphire.AppDrawerIconView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:paddingLeft="@dimen/vertical_app_drawer_icon_padding"
+    android:paddingRight="@dimen/vertical_app_drawer_icon_padding"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/label"
+        style="@style/WorkspaceIcon"
+        android:shadowRadius="0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</com.NxIndustries.Sapphire.AppDrawerIconView>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:launcher="http://schemas.android.com/apk/res-auto">
+
+    <Preference
+        android:layout="@layout/customization_header"/>
+
+    <com.NxIndustries.Sapphire.preference.MaterialPreference
+        android:title="@string/home_dock"/>
+
+    <SwitchPreference
+        android:key="show_dock"
+        android:title="@string/show_dock"
+        android:defaultValue="true" />
+
+    <SwitchPreference
+        android:key="enable_chevronbar"
+        android:title="@string/show_chevronbar"
+        android:summary="@string/chevronbar_summary"
+        android:defaultValue="true"
+        android:dependency="show_dock"/>
+
+    <com.NxIndustries.Sapphire.preference.NumberPickerPreference
+        android:dependency="show_dock"
+        android:key="dock_icon_count"
+        android:title="@string/dock_icons_title"
+        android:summary="@string/dock_icons_summary"
+        launcher:min="1"
+        launcher:max="@integer/dock_max_icons" />
+
+    <SwitchPreference
+        android:dependency="show_dock"
+        android:key="dock_hide_icon_labels"
+        android:title="@string/hide_icon_labels_title"
+        android:summary="@string/hide_icon_labels_dock_summary"
+        android:defaultValue="true" />
+
+    <com.NxIndustries.Sapphire.preference.SeekBarDialogPreference
+        android:dependency="show_dock"
+        android:key="dock_icon_size"
+        android:title="@string/icon_size_title"
+        launcher:max="130"
+        launcher:min="70"
+        launcher:defaultValue="100" />
+
+    <net.margaritov.preference.colorpicker.ColorPickerPreference
+        android:dependency="show_dock"
+        android:key="dock_background"
+        android:title="@string/dock_bkgn"
+        android:summary="Adds a paper like affect to your dock"
+        android:defaultValue="@color/transparent"/>
+
+</PreferenceScreen>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <Preference
+        android:layout="@layout/sketch_header" />
+
+    <com.NxIndustries.Sapphire.preference.MaterialPreference
+        android:title="@string/navbar"/>
+
+    <Preference
+        android:summary="@string/navbar_note"
+        android:selectable="false"/>
+
+    <CheckBoxPreference
+        android:key="home_button_default_screen"
+        android:title="@string/home_button_default_title"
+        android:summary="@string/home_button_default_summary"
+        android:defaultValue="true" />
+
+    <CheckBoxPreference
+        android:key="key_buttons"
+        android:title="@string/unlock_nav"
+        android:summary="@string/unlock_nav_info"
+        android:defaultValue="false"/>
+
+    <ListPreference
+        android:dependency="key_buttons"
+        android:key="home_button_action"
+        android:title="@string/home_button_title"
+        android:summary=""
+        android:entries="@array/gesture_target_names"
+        android:entryValues="@array/gesture_target_values"
+        android:defaultValue="default_homescreen" />
+
+    <ListPreference
+        android:dependency="key_buttons"
+        android:key="back_button_action"
+        android:title="@string/back_button_title"
+        android:summary=""
+        android:entries="@array/gesture_target_names"
+        android:entryValues="@array/gesture_target_values"
+        android:defaultValue="nothing" />
+
+    <ListPreference
+        android:dependency="key_buttons"
+        android:key="menu_button_action"
+        android:title="@string/menu_button_title"
+        android:summary=""
+        android:entries="@array/gesture_target_names"
+        android:entryValues="@array/gesture_target_values"
+        android:defaultValue="show_previews" />
+
+</PreferenceScreen>

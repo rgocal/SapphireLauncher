@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.NxIndustries.Sapphire.BubbleTextView xmlns:android="http://schemas.android.com/apk/res/android"
+   style="@style/WorkspaceIcon.Folder"
+   android:focusable="true" />

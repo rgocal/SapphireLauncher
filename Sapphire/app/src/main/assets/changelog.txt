@@ -1,0 +1,349 @@
+Sapphire Launcher Changelog
+Current Branch: 12
+Milestone: 3
+Target SDK: 25
+Developer: Ryan Gocal (Nx Biotic)
+-------------------------------
+**12.2.00**
+
+--Settings--
+2/06 -Launcher Settings Revamp
+2/06 -Restyled User Interface
+2/06 -Recoded Fragment Interface and Code Registry
+2/06 -Removed 45% Redundant Code
+2/11 -Removed Google Plus Post To Feed Code (May make an add-on in the future)
+2/11 -Removed Panel Code From EHS
+2/11 -Restyled Preference Headers
+2/11 -Cleaned Up Setting Preferences
+2/12 -Removed Simple Launcher (No one used it, may release a stand alone simple launcher in future)
+2/12 -Revamped Sketch Creator
+2/12 -Cleaned Up Deprecated Sketch Coding
+2/12 -Integrated Drywall Services
+2/12 -Removed Old Wallpaper Code
+2/12 -Removed Newsfeed (All news related to applications by GSD now will be fed through GSD Mobile)
+2/15 -Added Multi-Dex Support (True 64bit support)
+2/16 -New Launcher Action Icons
+2/16 -New Intro With Privacy Policy Information
+2/16 -Memory Leak Fix In Extended Drawer Fragment
+2/19 -Minor Google Login Activity Revamp
+2/19 -New About Activity
+
+--Gradle--
+2/12 -Cleaned Up Manifest Deprecation
+2/12 -Updated Gradle
+2/19 -Removed AboutLibs (Redundant license viewer, doesnt show homebrew projects used)
+2/19 -Removed Several Deprecated Gradle projects
+
+--Launcher--
+2/12 -Minor Launcher Activity Fixes
+2/12 -Bottom Menu Fixes
+2/12 -Removed Several Large Drawables For Compression Value
+2/19 -Various Visual Fixes To Searchbar
+2/19 -New Searchbar Personal Tweaks
+2/19 -Added Privacy Policy Information
+
+
+**12.1.00**
+
+--Settings--
+12/5 -Removed News Tab (Caused force closes when internet wasnt available to launcher)
+12/5 -Moved Tab To Drawer Menu
+12/5 -Added Compressed Collapsable Tabs To Drawer Menu(Much Cleaner...)
+12/5 -Fixed Several DP Problems
+12/5 -Fixed Pixel/Nexus Rotation Fatal Bug (Page Indicator Toggle Registry)
+12/5 -Centered Newsfeed Cards (Discovered it's easier to read)
+12/5 -Revamped Newsfeed Activity
+12/5 -Removed Unuesed Code In 3rd Fragment Tab (Useless animation code leaking memory...)
+12/5 -Minor Bug Fix In Registry
+12/5 -Smoother Transistion On Android Naugat
+12/7 -Added ChevronBar Toggle
+
+--Gradle--
+12/5 -Updated Build Tools Version
+12/7 -Updated Google Services
+12/7 -Revised Compression Status
+
+--Launcher--
+12/5 -Fixed Rotation Bug (ID was registering null on rotation on larger devices)
+12/5 -Slightly Faster Benchmark/Performance
+12/6 -Minor GUI Fixes To EHS
+12/7 -Added Chevron Appbar To Dock (Android N theme concept minus the animation)
+12/8 -Minor Launcher Menu Touchup
+
+
+**12.00.10 Hotfix**
+
+--Gradle--
+11/8 -Removed Constraint Layout (Buggy as hell...)
+11/8 -Gradle Updates
+11/8 -ADS Updates
+
+--Workspace--
+11/9 -Patched EHS Layout (Crash fixed on Pixel and Nexus?)
+
+--Settings--
+11/9 -Patched Toolbar Code (Now home click opens drawer)
+11/9 -Misc Code Cleanup (Mostly performance issues for Pixel Devices)
+
+**12.00.00**
+
+--Gradle--
+10/10 -Updated All Google Libs
+10/10 -Removed Any Unnecessary Libs Consuming Space
+10/10 -Incorperate Native Code Over 3rd Party Libs
+10/10 -Google Services Patched
+10/10 -Optimal Changes For x64bit Devices
+10/12 -x64bit Compile And Compression
+10/12 -x32 Compile And Compression (Not as aggressive...)
+10/21 -Updated Gradle Builder (Again...cmon google stop breaking my shit)
+10/23 -Added Support Android 7.1
+10/23 -Removed Max SDK (Redundant)
+10/23 -Upgraded Compiled SDK To 25
+10/23 -Optimized Recompiled Code
+10/23 -Fixed Deprecated Instances
+
+--Workspace--
+9/18 -General Maintenance To DropTargetBar
+9/18 -Removed Transtionable Drawable From Info, Delete and Remove Target Actions (Caused problems on various devices)
+10/10 -Fixed PageIndicator Toggle (Now properly hides)
+10/10 -Added Hide Dock Tweak
+10/10 -Dark Statusbar Patched
+10/21 -Revamped Google Instant Post Feature
+10/25 -Removed Deprecated Code In EHS Panel
+10/25 -Removed Customization To Battery Text & Panel (Might Return, caused visual problems)
+10/25 -Reconstructed Google Instant Post (Now uses Share post intent right from google plus)
+10/29 -Constraint Layouts Now Maintain EHS (Lets experiment, may not be perminant)
+
+--Launcher--
+9/18 -Rebased And Patch URL Image Cache for OTA Wallpapers
+9/18 -Fixed URL Image Loading and Downloading (???)
+10/10 -Optimized Imports
+10/10 -Android N Deprecation Patches
+10/10 -EHS Performance Patch
+10/12 -64 Manual XMl Fixes For Android N
+10/12 -32 Visual Fixes
+10/12 -38 AppCompat Fixes
+10/12 -302 String Fixes (Report any miss-spellings please...)
+10/19 -Removed Dashclock Panel (Working on seperate application for Dashclock)
+10/19 -Cleaned Up Dashclock Remaining Code
+10/20 -Fixed Android 5 & 5.1 Crash
+10/21 -Incorperated New Gesture Registry
+10/21 -Incorperated New Gesture Custom Action Listener
+10/21 -Fixed Wallpaper Out Of Memory Bug
+10/21 -Revamped Wallpaper Layout & Buttons
+10/21 -Fixed Serious HTTP Loader Bug In Wallpaper Archives
+10/21 -Patched Google Pixel Wallpaper Chooser Detector (Uses as default if installed)
+10/27 -Fixed Settings Registry Bug From Andoid 7.1 Mergence
+10/27 -Patched Manifest Entres
+10/28 -Recoded SmartGrid Alignment (Now tries to build workspace grid based on dp values)
+10/28 -Fixed Layouts In Simple Home (Could we look into widget support at a later date?)
+10/28 -Refractor & Cleanup System (Deleted over 100 unused files and assets)
+10/28 -Replaced Drawables With Assets When Necessary
+
+--Settings--
+9/18 -New Minimalistic Material UI For General and Homescreen Tabs
+10/10 -Implemented Multiple Patches To Registery
+10/21 -Respectfully Seperated Gesture Settings
+10/21 -Revamped Gesture Settings Registery
+10/21 -Simple Gestures Custom Actions (Now can bind to any action or activity)
+10/21 -Fixed Card Layouts
+10/21 -Newsfeed Now Supports Hotlinks
+10/24 -Added New Apps To Downloads
+10/24 -Added New Community Fab
+10/24 -Support Widget Code Updated
+10/27 -Added Update Checker
+
+--Ect--
+10/18 -Cleaned Off My Keyboard Of Crumbs From Children
+10/18 -Wiped Booger Off Monitor
+10/18 -Undeleted Android Studio Projects...
+
+**11.4.00**
+
+--Workspace--
+8/21 -Physical Menu Button Now Opens Launcher Menu(Works for longpress recents mod, Menu does not open in EHS)
+8/21 -Removed AppCompat Animations To EHS Fab Intents(Caused some funky transition glitches)
+8/21 -Vamped The Google Plus1 View (Not that anyone would of noticed)
+8/21 -Revamped DropTargetBar Drawables
+8/21 -Organized Launcher Menu
+8/31 -Added Shortcut Maker Filter (All Apps or System Apps)
+9/10 -Added Experimental Dark Statusbar(Android 6.0+?)
+
+--Gradle--
+8/31 -Updated Google Services Gradle
+8/31 -Updated AboutLibs Gradle
+8/31 -Updated Gradle Build
+8/31 -Several Manifest Fixes
+8/31 -Gradle Optimization
+
+--Settings--
+8/26 -Fixed Several Deprecated Methods In News For Android N
+8/31 -Added Navigation Drawer Menu
+8/31 -Minimal General Settings Menu Added
+8/31 -Updated Bug Report Function (Now allows user to choose report function, usually should select android or google services)
+8/31 -Updated Sapphire Launcher News Feed (Layout DP Fixes and Json reader)
+8/31 -Fixed AboutLibs (Links and Intents were acting up, updated gradle worked)
+8/31 -Clicking On Icon In AboutLibs Opens Plus1
+9/10 -Removed Features Page (Non-Launcher tweaks related, moved to menu)
+9/10 -Moved Features Page Menu Items In Drawer Menu
+9/10 -Misc Code Cleanup & String Fixes
+9/10 -Navigation Fix For Android Naugat
+9/10 -Happy Two Year Anniversay Honey <3 (She doesn't know this is here)
+9/10 -Added Experimental Dark Statusbar Tweak (Android 6.0+?)
+9/11 -Minor Fixes In Sketch Lister
+
+--Launcher--
+9/10 -Began Replacing Hardcoded Strings With Targeted Strings
+9/10 -Minor Wallpaper Chooser Fix
+9/10 -Wallpaper Chooser Patch
+
+**11.3.15**
+
+--Workspace--
+6/28 -Canned Taskbar Concept, Bring Back The Search Widget!
+6/28 -Rebuilt Workspace Immersive Search Widget (Custom Search Input, Custom Voice Search, Launcher Menu & Slick Drawer)
+6/28 -Search Widget Customization (requires runtime restart)
+6/28 -Dashclock Permission Fix
+6/28 -Removed Chrome Custom Tab Intents (Were crashing various devices...)
+6/28 -Added New Shortcut Maker
+6/28 -Shortcut Maker Allows Editing
+6/28 -Revamped Runtime Engine
+6/28 -Added Toggle To EHS Fab Menu
+6/28 -Each Fab Menu Item Toggleable Now
+6/28 -Fixed EXS Space issue
+6/28 -EHS Drawer No Longer Uses Recent Apps Listing (Alphabetical)
+6/28 -EHS Drawer General Maintenance
+6/28 -Fixed Home Intent Search Issue When EHS Activated
+6/28 -Added Apps Refresh Button To EHS
+6/28 -Fixed Rare EHS Search Issue
+6/28 -Recoded EHS Search Query
+6/28 -EHS Fragment Maintenance
+6/28 -EHS Layout Maintenance
+7/8 -EHS General Maintenance
+7/8 -EHS Actionbar Will Now Hide On FlingScroll
+7/8 -Google Plus Post Action Revamped (Simplified for new G Services)
+7/8 -General Maintenance To Shortcut Maker
+7/15 -Shortcut Maker Maintenance (Removed recent activities from list, takes up memory)
+7/15 -Wallpaper Activity Maintenance
+7/15 -Horizontal Searchbar Fixed
+7/20 -Removed EHS Auto-hide Actionbar
+7/20 -Fixed EHS Layout And DP Corrections
+7/20 -General Maintenance Avatar Icon
+7/22 -EHS Drawer Now Below Actionbar
+7/22 -Drawer Refresh Button Working? (Will change to pull to refresh once we confirm its working)
+7/22 -Removed Weather Icon In EHS (Fairwell my friendly asset)
+7/22 -Revamped EHS Header Layout
+8/10 -Added Simple Home Mode
+8/12 -Added Active Space Widget (Allows for an empty widget space for extra screens for wallpaper scrolling)
+
+--Launcher--
+7/8 -Dashclock Maintenance
+7/14 -General Maintenance To Search Widget
+7/16 -Restyled Dashclock Panel
+7/16 -Added Transparent Style Background To SDrawer Activity (Should we adjust the sytle?)
+7/16 -Fixed A Small Permission Bug In Intro
+7/16 -Added 2 New Permissions In Startup
+7/22 -Dashclock Panel Maintenance
+7/22 -Dashclock Panel String Fixes
+7/22 -Forked Folder Patches From Branch N_Stable (Noticable Performance boost to handling folders)
+7/22 -Hide Page Indicators
+7/23 -Fixed Memory Leak In OTA Wallpapers (Will it fix FCs?)
+7/23 -Revamped And Patched OTA Wallpapers Layouts And Menus
+7/23 -Increased Memory When Downloading HD Wallpapers
+7/23 -Patched Wallpaper Manifest XML Downloader
+7/23 -OTA Wallpaper Preview Now Shows 6 Wallpapers In A Smaller Circle Design
+7/23 -OTA Wallpaper Preview Set Button Removed And Actions Moved To Menu
+7/26 -Updated Settings Registry
+7/26 -Added Command Scripting For Performance Monitoring
+7/26 -Added Command Prompting For Monitoring System Data Usage *Widget)
+7/26 -Added Command Helpers
+7/26 -Revamped EHS Layout
+7/26 -Updated EHS Fragment Listener
+7/27 -Google Badge Maintenance (Profile Avatar)
+7/27 -Fab Menu Style Fixes
+7/27 -Removed EHS Refresh Button (Nope...)
+7/27 -Fixed EHS Application Reshresh Issue??
+7/27 -Changed Fab Menu Size Small
+7/27 -Orientation Fixes
+7/27 -Fixed Landscape Mode Bug
+7/28 -EHS Digital Clock Now Opens To Alarms (AOSP Only?)
+7/28 -EHS Date Now Opens To Google Calendar (AOSP/Google Only?)
+7/28 -EHS Battery Opens To Battery Saver Settings (AOSP Only?)
+7/28 -EHS Data Open Memory Management (AOSP Only?)
+7/29 -Removed Misc Deprated Assets
+7/29 -Compressed Source Package (20MB cut?)
+8/2 -Updated Launcher Icons
+8/6 -New Simple Home Mode
+8/6 -Removed Custom Avatar Picker (Wasnt working correctly on multiple accounts...)
+8/6 -Clicking On Avatar Will Open Google Settings
+8/10 -Launcher Will Now Launch Google Nexus Wallpaper Picker If Installed
+8/10 -Increased Memory Cache In OTA Wallpapers (decrease crashing rates)
+8/11 -Added Haptic Feedback To Search Bar Buttons
+8/11 -Added Haptic Feedback To EHS (How will battery fair?)
+8/12 -Minor Dashclock Panel Style Fixes
+8/12 -Disabled Data Widget In EHS (for now...its crashing on some devices making EHS non useable)
+
+--Settings--
+6/28 -Removed Dividers In News Fragment (Style Fix)
+6/28 -NEW-Smart Settings Activity Rebuilt From Ground Up
+6/28 -Settings Activity Features Android N's Bottombar GUI
+6/28 -Re-alocated Several Fragments In Launcher Customization
+6/28 -Re-alocated Fragment Route Destinations For Faster Response Time
+6/28 -Bottombar Merges With NavigationBar Enabled Devices
+6/28 -New Launcher Settings Category Panels
+6/28 -API 24 Material Screen Transitions
+6/28 -Removed Several Unnecessary Activities And Fragments
+6/28 -Vector Drawables Replaced PNG Drawables
+6/28 -Shared Element Transistions
+6/28 -Revamped Fragment Activities
+6/28 -Intelligent Fragment Navigation
+6/28 -Smooth Transitional Animations
+6/28 -Less Hardware resources used
+6/28 -Revamped Changelog Viewer (Scroll to dismiss)
+7/8 -Fixed Tablet UI Crash
+7/15 -Edited Icon Pack Strings
+7/15 -Edited Preference Header Primary Color
+7/15 -Revamped Gestures Preference Fragment Style
+7/15 -Newly Styled Preference Icons
+7/16 -Newly Revamped Download Page
+7/16 -Increased Height To Settings Panels
+7/16 -Decreased Tab Text Size
+7/16 -String Fixes In EHS
+7/16 -Adjusted Preferences In Folder Customization
+7/16 -General Code Maintanence In Customization Service
+7/16 -Revamped Style For Gesture Creation
+7/22 -String Fixes
+7/28 -Added Search For Icon Packs On Google Play No Icon Pack Detected Dialog
+7/28 -Added Get More Action In Icon Packs Selector
+7/29 -Integrated Donation Dialog (Hopefully working correctly, all keys should null out dialog)
+7/29 -Now Easier To Purchase A License Key
+7/29 -Premium Backers Get Premium SubTitle
+7/29 -Onyx Backers Get Onyx SubTitle
+8/2 -Fixed A Bug Where Disabling Fab Menu Would Disable Search Menu (ViceVersa)
+8/2 -Statusbar And Navbar Colors Apply Faster On Home Press
+8/3 -Minor Settings Registry Fix For Google Hotword
+8/6 -New Simple Home Toggle
+8/6 -Minor Settings Registry Adjustments For Simple Home
+8/6 -Revamped Sign In Activity With ScrollDismiss
+8/6 -Added Personalization FAB For Simple Home Mode
+8/10 -Added Simple Home Mode Toggle (Patched a few times during testing)
+8/10 -Recoded FABS In Extended Home Screen
+8/12 -About Information Updated
+8/12 -Version Code Maintained
+8/14 -Updated SubTitles For License Users
+8/14 -Fixed A Minor Bug In Newsfeed (Crashed with no internet connection)
+8/14 -Added Redo Intro Option
+8/14 -Recoded Several Sections For Interface Tweaks
+8/14 -Minor String Fixes
+8/14 -Minor GUI Fixes In Support Section
+
+--Gradle--
+6/28 -Removed Jar Package For Dashclock API And Merged Gradle
+6/28 -Cleaned Up Gradle For Optimization
+7/8 -Updated Google Packages
+7/8 -Updated About Libraries Gradle (Is it detecting all the libs?)
+7/8 -Updated Target SDK to 24
+7/8 -Updated Google Services and JSON File Support
+7/8 -Updated Google SignIn Services
+7/8 -Updated Java Compiler
+8/12 -Minor Gradle Patches & Compression

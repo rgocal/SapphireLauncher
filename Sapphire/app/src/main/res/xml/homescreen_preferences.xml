@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:launcher="http://schemas.android.com/apk/res-auto">
+
+    <Preference
+        android:layout="@layout/customization_header"/>
+
+    <com.NxIndustries.Sapphire.preference.MaterialPreference
+        android:title="Homescreen Settings"/>
+
+    <com.NxIndustries.Sapphire.preference.DoubleNumberPickerPreference
+        android:key="homescreen_grid"
+        android:summary="@string/grid_size_summary"
+        android:title="@string/grid_size_title"
+        launcher:max1="10"
+        launcher:max2="10"
+        launcher:min1="1"
+        launcher:min2="1"
+        launcher:pickerTitle1="@string/grid_size_rows_title"
+        launcher:pickerTitle2="@string/grid_size_columns_title" />
+
+    <SwitchPreference
+        android:key="homescreen_hide_icon_labels"
+        android:title="@string/hide_icon_labels_title"
+        android:summary="@string/hide_icon_labels_homescreen_summary"
+        android:defaultValue="false" />
+
+    <com.NxIndustries.Sapphire.preference.SeekBarDialogPreference
+        android:key="homescreen_icon_size"
+        android:title="@string/icon_size_title"
+        launcher:max="130"
+        launcher:min="70"
+        launcher:defaultValue="100" />
+
+    <SwitchPreference
+        android:key="show_shadow"
+        android:title="@string/show_shadow_title"
+        android:summary="@string/show_shadow_summary"
+        android:defaultValue="true" />
+
+    <SwitchPreference
+        android:key="enable_indicators"
+        android:title="@string/page_ind"
+        android:defaultValue="true" />
+
+    <net.margaritov.preference.colorpicker.ColorPickerPreference
+        android:key="scroll_right_background"
+        android:title="Scroll Right"
+        android:summary="Overscroll affect color"
+        android:defaultValue="@color/white"/>
+
+    <net.margaritov.preference.colorpicker.ColorPickerPreference
+        android:key="scroll_left_background"
+        android:title="Scroll Left"
+        android:summary="Overscroll affect color"
+        android:defaultValue="@color/white"/>
+
+</PreferenceScreen>
